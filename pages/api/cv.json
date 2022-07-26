@@ -1,0 +1,19 @@
+{
+    "name": "Arin",
+    "lastname": "Sinabian",
+    "en": {
+    
+        "role": "Developer",
+        "aboutMe": "something"
+    },
+    "skills":[
+        {
+            "name": "some skill",
+            "level": 40
+        },
+        {
+            "name": "some skill 2",
+            "level": 70
+        }
+    ]
+}
