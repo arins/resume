@@ -1,19 +1,144 @@
 {
     "name": "Arin",
     "lastname": "Sinabian",
+    "email": "arin.sinabian@gmail.com",
+    "birthday": "1984-04-01T01:00:00",
     "en": {
+        "role": "Full stack developer",
+        "aboutMe": "asdf",
+        "experince": [
+            {
+                
+                "title": "Charge Amps",
+                "period": {
+                    "from": "2022-02-01T00:00:00Z",
+                    "to": null
+                },
+                "role": "Backend developer",
+                "location": "Stockholm",
+                "description": "saf",
+                "tech": {
+                    "server": [
+                        "Microservices", "C#", "ASP.NET 6", "Proto.Actor", "Dapper", "SQL", "xUnit.NET", "Swashbuckle (Swagger)", "REST API", "MassTransit"
+                    ],
+                    "client": [
+
+                    ],
+                    "devops": [
+                        "Azure DevOps", "Azure Container Registry", "GIT", "Azure Pipelines/Releases", "Kubernetes", "Helm", "Grafana", "Loki", "Tempo", "Prometheus"
+                    ],
+                    "environment":[
+                        "Azure", "Azure SQL", "Docker", "Kubernetes",  "Azure K8s", "Azure Redis", "RabbitMQ", "Kafka", "Azure Cosmos DB"
+                    ]
+                }
+
+            }
+        ]
+    },
+    "sv": {
     
-        "role": "Developer",
-        "aboutMe": "something"
+        "role": "Fullstackutvecklare/Arkitekt",
+        "aboutMe": "Jag är systemarkitekt med både backend och frontend erfarenhet. Jag började jobba som utvecklare 2008 och har jobbat inom olika branscher och i olika länder. Jag är en kreativ utvecklare som själv kommer med förslag på funktioner och lösningar. Mina styrkor ligger i min förmåga att kommunicera med andra utvecklare och kunder/kravställare. Jag är mycket driven, analytisk och positivt lagd. Jag är social och har lätt för att knyta kontakter. Jag har lätt för att lära mig nya tekniker och metoder för att lösa uppgifter. Jag tycker att det är kul att sprida min kunskap men också bra på att lyssna och ta in ny kunskap.",
+        "experince": [
+            {
+                "title": "Charge Amps",
+                "period": {
+                    "from": "2022-02-01T00:00:00Z",
+                    "to": null
+                },
+                "role": "Backendutvecklare",
+                "location": "Stockholm",
+                "description": "Charge Amps gör laddboxar till elbilar/laddhybrider. Olika team ansvarade för olika delar av Charge Amps molntjänst. Jag var i ett team som utvecklade OCPP server men jag bidrog till flera team. Min roll var att utveckla OCPP server som följer OCPP standarden för kommunikation mellan moln och laddbox. Där ingår bland annat att styra strömstyrkan under laddning. Balansera laddning mellan övrig förbrukning så säkringar inte går. Jag bidrog med min kunskap inom mikrotjänstarkitektur, enhetstestning, integrations testning. Jag satte upp nya mikrotjänster från grunden skrivna i .NET med Helm Charts deployade på Kubernetes. Jag lärde mig även nytt ramverk kallat Proto.Actor som är ett sätt utveckla applikationer distribuerat efter aktormodellen. OCPP server var utvecklat med Proto.Actor ramverket som gjorde det möjligt att skala till 100 000 laddboxar samtidigt utan problem.",
+                "tech": {
+                    "server": [
+                        "Microservices", "C#", "ASP.NET 6", "Proto.Actor", "Dapper", "SQL", "xUnit.NET", "Swashbuckle (Swagger)", "REST API", "MassTransit"
+                    ],
+                    "client": [
+
+                    ],
+                    "devops": [
+                        "Azure DevOps", "Azure Container Registry", "GIT", "Azure Pipelines/Releases", "Kubernetes", "Helm", "Grafana", "Loki", "Tempo", "Prometheus"
+                    ],
+                    "environment":[
+                        "Azure", "Azure SQL", "Docker", "Kubernetes",  "Azure K8s", "Azure Redis", "RabbitMQ", "Kafka", "Azure Cosmos DB"
+                    ]
+                }
+
+            }
+        ]
+    
     },
     "skills":[
         {
-            "name": "some skill",
-            "level": 40
+            "name": ".NET/.NET Core",
+            "level": 90
+        
         },
         {
-            "name": "some skill 2",
+            "name": "C#",
+            "level": 90
+        },
+        {
+            "name": "SQL",
+            "level": 70
+        },
+        {
+            "name": "JavaScript",
+            "level": 90
+        },
+        {
+            "name": "TypeScript",
+            "level": 90
+        },
+        {
+            "name": "React",
+            "level": 70
+        },
+        {
+            "name": "Linux",
+            "level": 60
+        },
+        {
+            "name": "Kubernetes",
+            "level": 60
+        },
+        {
+            "name": "Helm",
+            "level": 60
+        },
+        {
+            "name": "CI/CD",
+            "level": 80
+        },
+        {
+            "name": "Microservices",
+            "level": 80
+        },
+        {
+            "name": "Message brokers RabbitMQ, Service Bus, Kafka",
+            "level": 60
+        },
+        {
+            "name": "Azure",
+            "level": 70
+        },
+        {
+            "name": "Angular",
+            "level": 80
+        },
+        {
+            "name": "HTML,CSS, SASS",
+            "level": 70
+        },
+        {
+            "name": "Docker",
+            "level": 60
+        },
+        {
+            "name": "Cosmos DB",
             "level": 70
         }
+
+
     ]
 }
