@@ -3,19 +3,19 @@
 
 import React from "react";
 import { Cv } from "../api/cv";
-import Line from "./Line";
 
 export default function AboutMe({cv}: {cv:Cv})
 {
     
     return (
-        <>
         
-            <h2 className="text-2xl font-bold">Profile</h2>
+        <div className="">
+            <h2 className="text-2xl font-bold pb-4">Profil</h2>
             
           <p>
             {cv?.sv?.aboutMe}
           </p>
-        </>
+          </div>
+        
     );
 }

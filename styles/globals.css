@@ -8,6 +8,9 @@
   src: url("../public/fonts/Poppins-Regular.ttf");
 }
 
+
+@import url('./../node_modules/animate.css/animate.min.css');
+
 html,
 body {
   height: 100vh;
