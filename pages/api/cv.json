@@ -10,6 +10,7 @@
             {
                 
                 "title": "Charge Amps",
+                "icon": "/logo-charge-amps-large.png",
                 "period": {
                     "from": "2022-02-01T00:00:00Z",
                     "to": null
@@ -42,6 +43,7 @@
         "experince": [
             {
                 "title": "Charge Amps",
+                "icon": "/logo-charge-amps-large.png",
                 "period": {
                     "from": "2022-02-01T00:00:00Z",
                     "to": null

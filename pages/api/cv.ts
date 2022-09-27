@@ -20,9 +20,11 @@ export interface AboutMe {
 export interface Skill {
     name:string;
     level: number;
+    icon?: string;
 }
 export interface ExperienceEntry{
     title: string;
+    icon?: string;
     period: Period;
     role: string;
     location: string;

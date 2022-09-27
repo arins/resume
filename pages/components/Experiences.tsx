@@ -8,14 +8,14 @@ import Experience from "./Experience";
 
 export default function Experiences({cv}: {cv:Cv})
 {
-    
+    let counter = 0;
     return (
         <>
         {cv?.sv.experince?.map(e=> 
             
-            <Experience key={e.title} experience={e}></Experience>
+            <Experience key={e.title} counter={counter++}  experience={e}></Experience>
               
-            
+        
           )}
           </>
     );
