@@ -22,6 +22,7 @@ function MyApp({ Component, pageProps }) {
   return <>
     <Head>
       <title>Arin Sinabian</title>
+      <link rel="apple-touch-icon" href="apple-touch-icon.png"></link>
       <link rel="manifest" href="manifest.json" />
     </Head>
     <Component {...pageProps} />
