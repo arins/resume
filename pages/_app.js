@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       duration: 600
     });
   }, []);
-
+ 
   return <>
     <Head>
       <title>Arin Sinabian</title>
