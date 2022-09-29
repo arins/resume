@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 
 import "aos/dist/aos.css";
-
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {
 
@@ -19,7 +19,13 @@ function MyApp({ Component, pageProps }) {
     });
   }, []);
 
-  return <Component {...pageProps} />
+  return <>
+    <Head>
+      <title>Arin Sinabian</title>
+      <link rel="manifest" href="manifest.json" />
+    </Head>
+    <Component {...pageProps} />
+  </>
 }
 
 export default MyApp
