@@ -9,6 +9,9 @@ const sv = new Intl.DateTimeFormat('sv-SE', { year: 'numeric', month: 'long' });
 
 export default function Experience({experience, counter}: {experience:ExperienceEntry, counter: number})
 {
+    if(!experience){
+        return <></>
+    }
     var from = experience.period?.from ? new Date(experience.period?.from) : null;
     
     var to = experience.period?.to ? new Date(experience.period?.to) : null;   
