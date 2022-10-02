@@ -25,14 +25,13 @@
                     "client": [
 
                     ],
-                    "devops": [
-                        "Azure DevOps", "Azure Container Registry", "GIT", "Azure Pipelines/Releases", "Kubernetes", "Helm", "Grafana", "Loki", "Tempo", "Prometheus"
-                    ],
                     "environment":[
                         "Azure", "Azure SQL", "Docker", "Kubernetes",  "Azure K8s", "Azure Redis", "RabbitMQ", "Kafka", "Azure Cosmos DB"
+                    ],
+                    "devops": [
+                        "Azure DevOps", "Azure Container Registry", "GIT", "Azure Pipelines/Releases", "Kubernetes", "Helm", "Grafana", "Loki", "Tempo", "Prometheus"
                     ]
                 }
-
             }
         ]
     },
@@ -58,14 +57,212 @@
                     "client": [
 
                     ],
-                    "devops": [
-                        "Azure DevOps", "Azure Container Registry", "GIT", "Azure Pipelines/Releases", "Kubernetes", "Helm", "Grafana", "Loki", "Tempo", "Prometheus"
-                    ],
                     "environment":[
                         "Azure", "Azure SQL", "Docker", "Kubernetes",  "Azure K8s", "Azure Redis", "RabbitMQ", "Kafka", "Azure Cosmos DB"
+                    ],
+                    "devops": [
+                        "Azure DevOps", "Azure Container Registry", "GIT", "Azure Pipelines/Releases", "Kubernetes", "Helm", "Grafana", "Loki", "Tempo", "Prometheus"
                     ]
                 }
-
+            },
+            {
+                "title": "Klara consulting",
+                "icon": "/KC_logo_Black_payoff.svg",
+                "period": {
+                    "from": "2021-01-01T00:00:00Z",
+                    "to": "2022-02-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare/Arkitekt",
+                "location": "Stockholm",
+                "description": "Klara Consulting hade utvecklat en portal åt sina kunder men saknade dokumentdelning mot sina kunder. Klara Consulting använde Sharepoint ut mot sina kunder men det var inte optimalt. Jag och UX fick rollen att ta reda på vad kraven var och vilken funktionalitet som fanns. UX tog fram design i Figma och tillsammans med användarna tog jag och UX fram kraven. Det befintliga systemet kördes i Kubernetes men var utvecklat som en monolit. Jag tog fram en mikrotjänstarkitektur där olika mikrotjänster ansvarade för affärsfunktioner. Jag gjorde även en tjänst som hanterade Sharepoint på ett enkelt sätt. Vilket möjliggjorde en dokumentdelning baserad på Office 365 för externa parter utan att man faktiskt använde SharePoint. Jag satte även upp CI/CD med Azure DevOps och Helm Charts.",
+                "tech": {
+                    "server": [
+                        "Microservices", "Event driven", "C#", "ASP.NET 5", "Entity Framework Core", "SQL", "MSTest", "Swashbuckle (Swagger)", "REST API", "Microsoft Graph API", "MSAL"
+                    ],
+                    "client": [
+                        "TypeScript", "Angular", "HTML", "SCSS", "Tailwind CSS", "Visual Studio Code"
+                    ],
+                    "environment":[
+                        "Azure DevOps", "Azure Container Registry", "GIT", "Azure Pipelines/Releases", "Kubernetes", "Helm", "Terraform"
+                    ],
+                    "devops": [
+                        "Docker", "Azure Kubernetes", "Azure Kubernetes", "Azure Redis", "Azure SQL", "Azure Service Bus", "RabbitMQ (lokal utv)", "Bridge to Kubernetes"
+                    ]
+                }
+            },
+            {
+                "title": "Klarna (In-house Spree)",
+                "icon": "/klarna.svg",
+                "period": {
+                    "from": "2021-05-01T00:00:00Z",
+                    "to": "2021-11-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare/Arkitekt",
+                "location": "Stockholm",
+                "description": "Spree fick i uppdrag att lansera ett spel åt Klarna som skulle används internt för deras supportavdelning. Det var ett webbaserat spel skrivet i Unity. Min roll var att ta fram en arkitektur för backend som skulle hantera användare och resultat under spelets gång. Användare loggades in via Azure Active Directory B2C sedan skickades man in i spelet i webbläsaren. Jag ansvarade även att backend kunde hantera stora mängden anställda från olika delar av världen som skulle spela samtidigt. Jag använde mig av Azure CDN för att kunna leverera spelet på ca 200-300Mb till alla användare utan att belasta faktiska servern med spelet. Jag utvecklade även en styrning av spelet så det gick att göra ”event” av spelet så alla kunde komma in i spelet samtidigt vilket kunden behövde.",
+                "tech": {
+                    "server": [
+                        "C# ASP.NET 5", "Azure Cosmos DB", "Swashbuckle (Swagger)", "REST API", "Docker", "MSAL"
+                    ],
+                    "client": [
+                        "Angular", "TypeScript", "HTML", "SCSS", "Visual Studio Code"
+                    ],
+                    "environment":[
+                        "Azure", "Azure Cosmos DB", "Azure CDN", "Azure Active Directory B2C", "Lasttestning (https://loadster.app/)"
+                    ],
+                    "devops": [
+                        "Azure DevOps", "Azure Container Registry", "GIT", "Azure Pipelines/Releases"
+                    ]
+                }
+            },
+            {
+                "title": "MTR via Spree",
+                "icon": "/mtr.png",
+                "period": {
+                    "from": "2020-11-01T00:00:00Z",
+                    "to": "2021-01-31T00:00:00Z"
+                },
+                "role": "Backendutvecklare",
+                "location": "Stockholm",
+                "description": "MTR Behövde hjälp med förvaltning och nyutveckling. Jag gick in som backendutvecklare men också som extra stöd åt frontend. Jag bidrog med kunskap i hur man kan skriva kod som är enkel att enhets testa i backend. Jag delade med mig av min erfarenhet och kunskap med teamet på distans via teams och på plats. Jag granskade både backend och frontend kod vid pull request. Jag satte även upp Azure SignalR och implementerade det i backend och visade för frontend utvecklarna hur man kunde använda det. Jag hade också tätt samarbete med testaren så buggar löstes snabbt. Jag gav förslag på förbättringar för Azure Devops pipelines och automatisk uppdatering av APIM vilket jag implementerade.",
+                "tech": {
+                    "server": [
+                        "C#", "ASP.NET 5", "Entity Framework Core",".NET Core IoC", "NuGet", "SQL", "MSTest", "Swashbuckle (Swagger)", "REST API" 
+                    ],
+                    "client": [
+                        "Angular", "TypeScript", "HTML", "SCSS", "Visual Studio Code"
+                    ],
+                    "environment":[
+                        "Docker, Azure Kubernetes", "Azure API Managment","Cosmos DB", "Azure SignalR"
+                    ],
+                    "devops": [
+                        "Azure DevOps", "Azure Container Registry", "GIT", "Azure Pipelines/Releases"
+                    ]
+                }
+            },
+            {
+                "title": "World Expo 2020 (in-house Spree)",
+                "icon": "/Expo-2020-logo.png",
+                "period": {
+                    "from": "2020-01-01T00:00:00Z",
+                    "to": "2021-08-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare/Arkitekt",
+                "location": "Stockholm",
+                "description": "World Expo 2020 är en utställning som skulle hållas i Dubai 2020 (uppskjuten till 2021 p.g.a. covid-19) där länder visar upp den senaste inom teknik, utveckling, forskning o.s.v. Spree fick i uppdrag att utveckla en del av Sveriges utställning. Spree tog fram interaktiva lösningar i Unity och webb som skulle presentera Sverige och företagen som är utställare. Min roll i projektet var att utveckla ett webbaserat CMS som passade tekniskt de interaktiva Unity-stationerna och att ta fram en webapplikation för guiderna i utställningen. Jag jobbade i ett team på 10 personer där min roll var fullstackutvecklare och ansvarig för att Unity-utvecklarna enkelt kunde integrera mot CMS:et. Jag hade möte med utvecklarna dagligen för att stötta dom tekniskt. Jag såg till att CMS:et var enkelt att använda för expopartners och jag tog även fram hur gränssnittet skulle ut. Jag skissade på hur hela arkitekturen och integrationen skulle se ut mellan CMS och alla applikationer. Jag vår också ansvarig att utveckla en progressive web app för guiderna som skulle hjälpa besökarna.",
+                "tech": {
+                    "server": [
+                        "C#", "ASP.NET Core 3.1", "Entity Framework Core", "SQL", "LINQ", ".NET Core IoC", "NuGet", "NUnit",  "Swashbuckle (Swagger)", "REST API"
+                    ],
+                    "client": [
+                        "TypeScript", "Angular", "Material Design", "Flex Layout", "NPM", "HTML", "SCSS", "Visual Studio Code", "React", "Redux", "React Router"
+                    ],
+                    "environment":[
+                        "Nginx", "Azure", "Azure SQL", "Azure App Service (Docker container), Docker Container"
+                        
+                    ],
+                    "devops": [
+                        "Bitbucket (Git)", "Docker hub", "Docker Container", "WSL 2", "Docker Compose (för utveckling)"
+                    ]
+                }
+            },
+            {
+                "title": "Kone (in-house Spree)",
+                "icon": "/KONE.svg",
+                "period": {
+                    "from": "2018-03-01T00:00:00Z",
+                    "to": "2020-02-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare/Arkitekt",
+                "location": "Stockholm",
+                "description": "Kone behövde ett verktyg för att stödja verksamheten från sälj till en färdig hiss. Jag hjälpte Kone att vidareutveckla verktyget SET (Sales and Engineering Tool). Syftet med systemet är att förenkla och vägleda olika roller i Kone genom processen från sälj till ett bygge av en hiss. Kraven var inte spikade utan togs fram under utveckling med mig och kunden tillsammans och släpptes löpande. Min roll var att utveckla systemet och att leda ett team på 3 utvecklare där jag planerade sprintar med en UX/ Projektledare med täta releaser på ca 2 - 4 veckor. Jag avlastade utvecklarna från DevOps bitarna så utvecklarna kunde fokusera på utveckling. Tex så tog Jag fram script för utvecklarna så manuellt processer skulle automatiseras. Jag och projektledaren hade tillsammans möte med kund regelbundet för att samla in krav från kunden inför varje release. Jag gav också förslag på funktioner till Kone och många av förslagen implementerades och uppskattades av Kone. Jag introducerade CI/CD för teamet för att förbättra kvalitén av nya versions släpp. Jag hjälpte även utvecklarna genom att göra skisser på arkitekturen så utvecklarna enklare kunde utveckla nya funktioner. SET används idag av Kone Sverige och Kone Norge och Kone är så pass nöjda att det även Danmark står på tur att få använda systemet.",
+                "tech": {
+                    "server": [
+                        "ASP.NET 4.7", "ASP.NET Core", "ASP.NET Web API", "ASP.NET Core MVC", "Entity Framework", "SQL", "LINQ", "Autofac", "NuGet", "REST API"
+                    ],
+                    "client": [
+                        "TypeScript", "Angular", "Material Design", "Flex Layout", "NPM", "HTML", "SCSS", "Visual Studio Code", "E2E test Protractor", "Jasmin"
+                    ],
+                    "environment":[
+                        "Azure", "Azure SQL", "Azure App Service", "Azure Logic Apps", "Azure Search", "Azure AD", "Azure Storage", "Visual Studio 2019" 
+                        
+                    ],
+                    "devops": [
+                        "AppVeyor", "Bitbucket (Git)", "PowerShell (deploy, DevOps)", "Angular CLI (Webpack)"
+                    ]
+                }
+            },
+            {
+                "title": "Symbrio (Konsult via Spree)",
+                "icon": "/symbrio.svg",
+                "period": {
+                    "from": "2016-11-01T00:00:00Z",
+                    "to": "2018-03-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare",
+                "location": "Stockholm",
+                "description": "Symbrio är ett företag som utvecklar faktureringssystem för byggbranschen. Både företag som är inköpare och återförsäljare/leverantörer är kunder hos Symbrio och använder systemet. Min roll var att gå in som frontend konsult för att lyfta Symbrios användargränssnit. Lyftet gjordes med teknisk hjälp av Angular och konfigurering av CI/CD för Angular i Jenkins. Jag jobbade tätt med andra backendutvecklare och en grafiskdesigner för att knyta ihop den nya designen och flödet med backend. Jag spred även kunskap om Angular inom teamet. Jag och den grafiska designern hade tät dialog om möjligheterna och jag kom med förslag på förbättringar i gränssnittet. Teamet jag jobbade med bestod av 7 utvecklare, 1 designer och 2 testare. Teamet delades upp efter krav/funktioner och då beroende på krav så kunde jag jobba med 1 - 2 utvecklare och 1 testare. Jag hade även en workshop med Symbrios utvecklare där vi byggde en varningslampa när något byggsteg i Jenkins misslyckades. Vi använde sig av NodeMCU som styrde relän. Den lilla workshopen uppskattades verkligen av Symbrios utvecklare.",
+                "tech": {
+                    "server": [
+                        "C#", "Web API ASP.NET", "WebSockets", "NHibernate", "SQL"
+                    ],
+                    "client": [
+                        "TypeScript", "JavaScript", "Angular", "AngularJS (fasades ut)", "HTML", "CSS", "Bootstrap", "LESS", "Webforms (fasades ut mot angular)"
+                    ],
+                    "environment":[
+                        "IIS", "Windows Server 2012", "SQL Server 2012", "Visual Studio 2017", "Visual Studio Code", "TFS", "NPM"
+                    ],
+                    "devops": [
+                        "Jenkins", "TFS", "Angular CLI", "Webpack"
+                    ]
+                }
+            },
+            {
+                "title": "Logivia/Visma (Konsult via Spree)",
+                "icon": "/visma.svg",
+                "period": {
+                    "from": "2015-09-01T00:00:00Z",
+                    "to": "2016-11-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare",
+                "location": "Stockholm",
+                "description": "Logivia är ett IT bolag som utvecklar logistiksystem och har ett samarbete med Visma. Systemet hanterar beställningar av transporter och med hjälp av systemet ska kunden snabba upp sin planering av transporter. Systemet kan planera och optimera körningar/hämtningar och även visa dessa i realtid och varna om något går snett. Teamet jag jobbade med bestod av 4 utvecklare, 1 testare och en projektledare. Jag fick utveckla flera olika delar av systemet i hela stacken från databas till HTML och JavaScript där jag även fick ta fram komponenter för användargränssnittet. Jag var stöd speciellt för frontendutvecklingen där jag delade med mig av kunskap till det andra. Eftersom design eller flöde inte fanns tog jag fram förslag som jag själv implementerade.",
+                "tech": {
+                    "server": [
+                        "MVC 5 .NET C#", "Entity Framework 6", "WCF", "Web Services"
+                    ],
+                    "client": [
+                        "JavaScript", "Knockout.js", "HTML", "CSS",  "Bootstrap", "LESS"
+                    ],
+                    "environment":[
+                        "IIS", "Windows Server 2012", "SQL server 2012", "Visual Studio 2013", "TFS"
+                    ]
+                }
+            },
+            {
+                "title": "Klustr (inhouse projekt Spree)",
+                "icon": null,
+                "period": {
+                    "from": "2015-01-01T00:00:00Z",
+                    "to": "2015-08-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare",
+                "location": "Stockholm",
+                "description": "Min roll i projektet var att driva och planera beckendutveckling. Backend bestod av ett REST API som Klustr appen (iOS och Android) kommunicerade med. Eftersom jag var den enda backendutvecklare tog jag mycket ansvar och planerade sitt arbete tillsammans med de andra två apputvecklarna. Teamet bestod i 2 apputvecklare, 1 testare och tillsammans med mig som backendutvecklare tog vi fram Klustr appen. Backend bestod också av Cloud Service som körde uppdatering av användarnas data och kommunicerade via Service Bus till Azure App Service. Jag valde denna uppdelning så tunga körningar skulle köras i Cloud Service för att lasta av Azure App Service som endast skulle hantera API anrop. Jag tog fram delar av den arkitekturen.",
+                "tech": {
+                    "server": [
+                        "Web API 2 .NET", "C#", "OAuth", "Entity Framework 6"
+                    ],
+                    "client": [
+                        
+                    ],
+                    "environment":[
+                        "Visual Studio 2015", "Azure Web app", "Azure Cloud Service", "Azure Service Bus", "Azure Storage", "Azure SQL Server", "MSTest"
+                    ],
+                    "devops": [
+                        "SVN", "TeamCity"
+                    ]
+                }
             }
         ]
     
