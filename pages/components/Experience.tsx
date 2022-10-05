@@ -18,11 +18,17 @@ export default function Experience({experience, counter}: {experience:Experience
     return (
         <div className="relative" data-aos={ counter % 2 ? "fade-left" : "fade-right"}>
             <div className="pt-4 pb-4 bg-white" >
+                
                 <h2 className="text-xl font-bold mb-2 flex flex-row pb-2">
-                    { experience?.icon ? <img className="w-16 mr-4" src={experience?.icon}></img> : null}
-                    <div className="flex flex-col">
-                        <div>
-                        {experience?.title}, {experience.role}, {experience.location}
+                    { experience?.icon ? (
+                        <div className="self-center pr-2">
+                            <img className="w-12 md:w-16 mr-4" src={experience?.icon}></img> 
+                        </div>
+                        ) : null 
+                    }
+                    <div className="flex flex-col self-center">
+                        <div className="flex flex-row flex-wrap">
+                            {experience?.title}, {experience.role}, {experience.location}
                         </div>
                         <div className="text-gray-500 text-xs">
                             {from ? sv.format(from).toUpperCase() + " - " : ""}  

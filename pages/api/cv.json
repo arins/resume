@@ -263,6 +263,231 @@
                         "SVN", "TeamCity"
                     ]
                 }
+            },
+            {
+                "title": "Flygstolar.se/ATE (inhouse på M-Bition)",
+                "icon": "flygstolar.png",
+                "period": {
+                    "from": "2014-01-01T00:00:00Z",
+                    "to": "2014-12-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare",
+                "location": "Stockholm",
+                "description": "När jag jobbade på M-bition som ägde tjänsten ATE och flygstolar.se så jobbade jag med att vidareutveckla ATE som är en prisjämförelsemotor för flygresor och hotell. ATE var alltså en SaaS-tjänst som användes av andra sajter. ATE hämtar in priser från flera resebyråer och sammanställer data för att sedan kunna presenteras av en resesajt som använder ATE. Användare kan då söka efter det billigaste flyg eller hotellpriset från den resebyrå kunden föredrar. Min roll var att vidareutveckla tjänsten med hotellsök och lägga in nya resebyråer i prisjämförelsemotorn. Jag gjorde även förbättringar i arkitekturen för att enklare kunna lägga in fler resebyråer.",
+                "tech": {
+                    "server": [
+                        "MVC 3 .NET", "C#", "Web Forms", "WCF", "Web Services", "ETL"
+                    ],
+                    "client": [
+                        "JavaScript", "CSS", "Knockout.js", "Bootstrap","HTML"
+                    ],
+                    "environment":[
+                        "IIS", "Windows Server 2008", "Windows Server 2012", "SQL Server 2008", "Visual Studio 2012", "SVN"
+                    ],
+                    "devops": [
+                        
+                    ]
+                }
+            },
+            {
+                "title": "Tele2 (Konsult via M-Bition)",
+                "icon": "Tele2_logo.svg",
+                "period": {
+                    "from": "2011-12-01T00:00:00Z",
+                    "to": "2014-01-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare",
+                "location": "Stockholm",
+                "description": "Jag arbetade i ett SCRUM team med cirka 20 personer uppdelade i front och backend team. Min uppgift var att stödja frontend teamet med att utveckla och underhålla webbutiken skriven i C# med ASP.NET Web Forms. TeamCity användes för att bygga, deploya och köra tester för frontend. Jag jobbade tätt med marknadsavdelning där jag tog eget ansvar och kommunicerade tydligt med marknad så resultat blev som förväntat. Jag jobbade också med konfiguration av olika typer av servrar och utbildade kollegor hur man konfigurerar dessa. Jag gav förslag att byta ut jQuery mot AngularJS för att förenkla utveckling av gränssnittet och öka på möjligheterna vilket gjordes med gott resultat.",
+                "tech": {
+                    "server": [
+                        "ASP .NET", "C#", "OpenText CMS"
+                    ],
+                    "client": [
+                        "JavaScript","HTML", "CSS", "jQuery", "AngularJS"
+                    ],
+                    "environment":[
+                        "IIS", "Linux", "SVN", "Git", "Windows Server", "Visual Studio 2010", "TeamCity", "REHL", "Apache HTTP Server", "Memcached", "PHP", "MySQL", "Magento"
+                    ],
+                    "devops": [
+                        
+                    ]
+                }
+            },
+            {
+                "title": "Bahnhof (Konsult via Netlight)",
+                "icon": "bahnhof.svg",
+                "period": {
+                    "from": "2011-06-01T00:00:00Z",
+                    "to": "2011-12-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare",
+                "location": "Stockholm",
+                "description": "Jag jobbade med att bygga ut Bahnhofs administration system för telefonväxlar. Min roll var att integrera mot SNPACs API så Bahnhofs administration system skulle kunna utföra porteringar enklare. Tyvärr blev jag inte klar med det uppdraget utan lämnade över den till en kollega som slutförde integrationen. Jag la grunden för integrationen och det var enkelt för kollegan att ta över och slutföra arbetet.",
+                "tech": {
+                    "server": [
+                        "Java", "Ruby on Rails"
+                    ],
+                    "client": [
+                        "JavaScript", "CSS", "HTML"
+                    ],
+                    "environment":[
+                        "Linux", "SVN", "Git", "Vim", "RubyMine"
+                    ],
+                    "devops": [
+                        
+                    ]
+                }
+            },
+            {
+                "title": "SCM Ventures (Konsult via Netlight)",
+                "icon": "blocket.svg",
+                "period": {
+                    "from": "2011-04-01T00:00:00Z",
+                    "to": "2011-06-01T00:00:00Z"
+                },
+                "role": "Frontendutvecklare",
+                "location": "Stockholm",
+                "description": "SCM Ventures är en del av blocket.se mot utländska marknaden.  Min roll var som webbutvecklare att utveckla HTML, CSS, JavaScript för ”feature phones” (äldre telefoner). Målet var att få ut en enkel version av blocket för indiska marknaden. Blocket visste inte vilka begräsningar som fanns i ”feature phones” vilket jag löste utmaningen genom att hitta statistik för de telefoner som var vanligast i Indien och att installera och dokumentera emulatorer för dessa. Detta arbete kunde blocket använda för att vidareutveckla i andra länder där dessa emulatorer behövdes. Jag jobbade självständigt i denna roll men kommunicerade med andra utvecklare inom SCM Ventures.",
+                "tech": {
+                    "server": [
+                        "PHP", "Blocket Templating"
+                    ],
+                    "client": [
+                        "JavaScript", "CSS","HTML" 
+                    ],
+                    "environment":[
+                        "Linux", "Bazar versionshantering", "Vim"
+                    ],
+                    "devops": [
+                        
+                    ]
+                }
+            },
+            {
+                "title": "Media Norge Digital (Konsult via Netlight)",
+                "icon": "schibsted-logo-vector-xs.png",
+                "period": {
+                    "from": "2010-10-01T00:00:00Z",
+                    "to": "2011-04-01T00:00:00Z"
+                },
+                "role": "Systemutvecklare",
+                "location": "Oslo",
+                "description": "Jag bodde och konsultade i Oslo i ca 8 månader eftersom jag fått ett uppdrag på Media Norge digital. MNO är en del av Schibsteds Digital avdelningar där utvecklingen av Schibsteds tidningar i Norge drivs (aftenposten.no, bt.no, aftenbladet.no med flera). Min roll var att hjälpa till att utveckla nya versioner av dessa sajter. Teamet jag jobbade i insåg att genom att utveckla ett gemensamt frontend ramverk för alla tidningar så skulle man spara mycket tid. Jag var med och tog fram ramverket tillsammans med MNOs utvecklare. bt.no lanserade först med ramverket för att sedan fortsätta med Aftenposten och Aftenbladet. Ramverket som utvecklades gjorde det mycket enklare för resterande tidningar att gå över till nya CMS:et Escenic. Jag jobbade enligt SCRUM med 3 frontend utvecklare och 5 andra backendutvecklare.",
+                "tech": {
+                    "server": [
+                        "JSP", "Escenic"
+                    ],
+                    "client": [
+                        "JavaScript","HTML", "CSS", "jQuery", "require.js" 
+                    ],
+                    "environment":[
+                        "Linux Debian", "Tomcat", "Intellij IDE", "SVN"
+                    ],
+                    "devops": [
+                        
+                    ]
+                }
+            },
+            {
+                "title": "TELE2/COMVIQ (Konsult via Done Interactive)",
+                "icon": "comviq.png",
+                "period": {
+                    "from": "2009-10-01T00:00:00Z",
+                    "to": "2010-10-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare",
+                "location": "Stockholm",
+                "description": "Jag jobbade som konsult på TELE2/COMVIQ där jag fick stödja COMVIQ team. Jags roll var att utveckla funktioner som marknadsavdelningen prioriterade.  T.ex. tanka kontantkortfunktion med integration till en betallösning för att förenkla för COMVIQ kunder att fylla på kontantkort via webben. Jag hoppade även in som extra stöd och hjälpte till med att utveckla TELE2 företagsshopen. Jag fick jobba i ett SCRUM team på 10 personer med daily standups och retros. Jag fick också ta fram backend och frontend arkitekturen för Comviqs nya sajt som skrevs i .NET och JavaScript.",
+                "tech": {
+                    "server": [
+                        "ASP. NET", "C#", "Web Services", "LiveServer"
+                    ],
+                    "client": [
+                        "jQuery", "AJAX", "JavaScript", "JSON", "HTML", "CSS"
+                    ],
+                    "environment":[
+                        "Linux", "OpenText Reddot (CMS)", "Windows Server 2008", "IIS", "Apache Tomcat (LiveServer)", "Visual Studio 2010", "SVN"
+                    ],
+                    "devops": [
+                        
+                    ]
+                }
+            },
+            {
+                "title": "Done Interactive",
+                "icon": null,
+                "period": {
+                    "from": "2009-08-01T00:00:00Z",
+                    "to": "2010-10-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare",
+                "location": "Stockholm",
+                "description": "Jag jobbade som fullstackutvecklare på Done Interactive. Jag jobbade med att utveckla kampanj och företagssajter och system åt kunder. Däribland kunder som Comviq, Blossa, Eurosport och andra kända varumärken. Kunderna jag jobbade med uppskattade min snabbhet och kommunikation.",
+                "tech": {
+                    "server": [
+                        "ASP .NET", "C#", "SQL", "PHP", "Web Services"
+                    ],
+                    "client": [
+                        "jQuery", "AJAX", "JavaScript", "JSON", "HTML", "CSS"
+                    ],
+                    "environment":[
+                        "IIS", "Windows", "Visual Studio 2008", "SQL Server 2008", "Adobe Photoshop", "SVN"
+                    ],
+                    "devops": [
+                        
+                    ]
+                }
+            },
+            {
+                "title": "Fastcheck",
+                "icon": null,
+                "period": {
+                    "from": "2008-04-01T00:00:00Z",
+                    "to": "2009-08-01T00:00:00Z"
+                },
+                "role": "Fullstackutvecklare",
+                "location": "Stockholm",
+                "description": "Fastcheck är ett företag som tillhandahåller reseguider i PDF format för nedladdning. Min roll var att integrera partnersidor med fastchecks nedladdning system och utveckla den egna sajten. Jag tog även fram en ny integrationsmetod som gjorde det lättare för icke teknisk personal att på kort tid ta fram en ny integration åt partners så man snabbare kunde få spridning av reseguiderna.",
+                "tech": {
+                    "server": [
+                        
+                    ],
+                    "client": [
+                        
+                    ],
+                    "environment":[
+                        
+                    ],
+                    "devops": [
+                        
+                    ]
+                }
+            },
+            {
+                "title": "Hewlett Packard (Praktik via Tongji University)",
+                "icon": "hp-hewlett-packard.svg",
+                "period": {
+                    "from": "2008-01-01T00:00:00Z",
+                    "to": "2008-06-01T00:00:00Z"
+                },
+                "role": "Systemutvecklare",
+                "location": "Shanghai",
+                "description": "Jag bodde i Shanghai och praktiserade på HP i 5 månader via Tongji University där jag var utbytesstudent. Jag var med och utvecklade ett felrapporteringssystem som används internt då hårdvara gick sönder eller inte fungerade. Jag jobbade i team på 3 personer vilket betydde mycket eget ansvar. Jag drev även kurs i JavaScript för mina kollegor som ville lära sig mer om frontend utveckling. ",
+                "tech": {
+                    "server": [
+                        
+                    ],
+                    "client": [
+                        
+                    ],
+                    "environment":[
+                        
+                    ],
+                    "devops": [
+                        
+                    ]
+                }
             }
         ]
     
