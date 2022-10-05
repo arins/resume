@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  resume_arin:
+    build: .
+    container_name: resume_arin
+    ports:
+    - "3001:3001"
+    network_mode: host
+    restart: unless-stopped
+    labels:
+    - "traefik.http.routers.arin_resume.rule=Host(`arin.sinabian.se`)"
+    - "traefik.http.routers.arin_resume.priority=99"
+    - "traefik.http.routers.arin_resume.tls=true"
+    - "traefik.http.routers.arin_resume.tls.certresolver=myresolver"
+    - "traefik.http.routers.arin_resume.middlewares=basicauth"
