@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   resume_arin:
+    image: resume:v1
     build: .
     container_name: resume_arin
     ports:
