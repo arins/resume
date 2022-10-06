@@ -18,7 +18,7 @@ export default function Home({cv}: {cv: Cv}) {
         
       </div>
       <TechStack></TechStack>
-      <div className="flex flex-col md:flex-row pt-20 p-4 md:p-10 pb-40 flex-wrap overflow-hidden">
+      <div className="flex flex-col md:flex-row pt-20 p-4 md:p-10 pb-20 flex-wrap overflow-hidden">
         
           <AboutMe cv={cv}></AboutMe>
         

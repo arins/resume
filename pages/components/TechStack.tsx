@@ -6,7 +6,7 @@ export default function TechStack()
     
     return (
         <>
-            <div className="flex flex-col pt-10 p-14">
+            <div className="flex flex-col pt-10 p-14 pb-6">
                 <h2 className="text-2xl font-bold text-center">Teknik</h2>
             </div>
             <div className="hidden md:block overflow-hidden">

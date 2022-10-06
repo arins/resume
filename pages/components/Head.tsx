@@ -20,7 +20,7 @@ export default function Head({cv}: {cv:Cv})
                             {cv?.name} {cv?.lastname}
                         </h1>
                     </div>
-                    <div className="flex flex-row justify-center flex-1">
+                    <div className="flex flex-row justify-center flex-1 pb-20">
                         <p className="text-lg text-lime-400 text-center">
                             {cv?.sv?.role}
                         </p>

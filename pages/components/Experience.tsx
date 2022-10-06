@@ -45,7 +45,7 @@ export default function Experience({experience, counter}: {experience:Experience
                 </div>
             </div>
                     
-            <div className="inset-x-1/2 border-l-2 border-black top-0 relative h-60 z-0 w-1">
+            <div className="inset-x-1/2 border-l-2 border-gray-200 top-0 relative z-0 w-1 h-32 md:h-60">
                         
             </div>
         </div>
