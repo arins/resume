@@ -11,3 +11,6 @@ services:
     - "traefik.http.routers.arin_resume.priority=99"
     - "traefik.http.routers.arin_resume.tls=true"
     - "traefik.http.routers.arin_resume.tls.certresolver=myresolver"
+    - "traefik.http.routers.arin_resume.middlewares=arin_resume"
+    - "traefik.http.middlewares.arin_resume.redirectscheme.scheme=https"
+    - "traefik.http.routers.whoami.entrypoints=web"
