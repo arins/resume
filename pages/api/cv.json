@@ -17,7 +17,7 @@
                 },
                 "role": "Backend developer",
                 "location": "Stockholm",
-                "description": "saf",
+                "description": "Charge Amps makes charging boxes for electric/hybrids cars. Different teams were responsible for different parts of Charge Amp's cloud service. I was in a team that developed OCPP server, but I contributed to several teams. My role was to develop the OCPP server that follows the OCPP standard for communication between cloud and charging box. This includes, among other things, controlling the current strength during charging. Load balancing chargers between other consumers of power so fuses don't blow. I contributed my knowledge in microservice architecture, unit testing, integration testing. I set up new microservices from scratch written in .NET with Helm charts deployed on Kubernetes. I also learned a new framework called Proto.Actor which is a distributed programming model called Actor Model. OCPP server was developed with the Proto.Actor framework which made it possible to scale to 100,000 charging boxes simultaneously without problems.",
                 "tech": {
                     "server": [
                         "Microservices", "C#", "ASP.NET 6", "Proto.Actor", "Dapper", "SQL", "xUnit.NET", "Swashbuckle (Swagger)", "REST API", "MassTransit"
