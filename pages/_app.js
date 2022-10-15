@@ -5,6 +5,22 @@ import AOS from 'aos';
 
 import "aos/dist/aos.css";
 import Head from 'next/head'
+import ReactGA from "react-ga4";
+
+
+let inDevEnvironment = false;
+
+if (process && process.env.NODE_ENV === 'development') {
+  inDevEnvironment = true;
+}
+if(!inDevEnvironment){
+  ReactGA.initialize([
+    {
+      trackingId: "G-HTJHKGFL4F",
+    }
+  ]);
+  ReactGA.send("pageview");
+}
 
 function MyApp({ Component, pageProps }) {
 

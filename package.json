@@ -9,11 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.9",
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "next": "12.2.3",
+    "next-usequerystate": "^1.7.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-ga": "^3.3.1",
+    "react-ga4": "^1.4.1"
   },
   "devDependencies": {
     "@types/node": "^18.6.1",
