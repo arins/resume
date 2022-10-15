@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Switch, { SwitchProps } from '@mui/material/Switch';
 
@@ -50,6 +50,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   }));
   
 
-  export function DarkModeSwitch(){
-    
+  export default function DarkModeSwitch()
+  {
+    return (<></>);
   }

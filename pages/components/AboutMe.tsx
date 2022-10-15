@@ -20,7 +20,7 @@ export default function AboutMe({cv}: {cv:Cv})
                 </h2>
                   
                 <p>
-                  {lang.aboutMe}
+                  {lang?.aboutMe}
                 </p>
               </div>
         
