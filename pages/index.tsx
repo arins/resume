@@ -33,19 +33,23 @@ export default function Home({cv}: {cv: Cv}) {
         <Head cv={cv}></Head>
         
       </div>
-      <TechStack></TechStack>
-      <div className="flex flex-col md:flex-row pt-20 p-4 md:p-10 pb-20 flex-wrap overflow-hidden">
+      <div style={{"pageBreakAfter":"always"}}>
+        <TechStack></TechStack>
+      </div>
+      
+      <br/><div style={{"pageBreakAfter":"always"}}></div>
+      <div className="flex flex-col md:flex-row pt-20 p-4 md:p-10 pb-20 flex-wrap overflow-hidden print:pr-10 print:pl-10">
         
           <AboutMe cv={cv}></AboutMe>
         
       </div>  
       <div className="flex flex-col p-4 md:p-10 overflow-hidden">
         <div data-aos="fade-left">
-          <h2 className="text-2xl font-bold mb-10">
+          <h2 className="text-2xl font-bold mb-10 print:pr-10 print:pl-10">
             {settings.lang == "sv" ? "Erfarenhet" : "Experience"}
           </h2>
         </div>
-        <div className="flex flex-row flex-wrap">
+        <div className="flex flex-row flex-wrap print:pr-10 print:pl-10">
           <Experiences cv={cv}></Experiences>
           
         </div>

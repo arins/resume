@@ -14,13 +14,13 @@ export default function Head({cv}: {cv:Cv})
                         const aboutMe:AboutMe = cv && cv[settings.settings.lang];
                         return (
                             <>
-                                <div className="flex flex-row-reverse bg-sky-600 pt-2 pr-2">
+                                <div className="flex flex-row-reverse bg-sky-600 pt-2 pr-2 print:hidden">
                                     <div className="flex flex-row justify-center items-center bg-white pl-2 md:pr-6 md:pl-3 md:pt-2 md:pb-2 rounded-xl">
                                         <EnglishSwitch></EnglishSwitch>
                                     </div>
                                 </div>
                                 
-                                <div className="flex flex-1 text-black p-10 pb-2 pt-2 md:p-10 md:pb-6 md:pt-6 flex-col bg-sky-600">
+                                <div className="flex flex-1 text-black p-10 pb-2 pt-2 md:p-10 md:pb-6 md:pt-6 flex-col bg-sky-600 print:bg-sky-600">
                                     
                                     <div className="flex flex-row justify-center pb-10 pt-10">
                                         <div className="flex align-middle p-2 rounded-full bg-white w-62 h-62 md:w-70 md:h-70 ">

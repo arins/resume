@@ -6,6 +6,7 @@ export interface Cv{
     en: AboutMe,
     sv: AboutMe,
     skills: Skill[];
+    pdfLayout: number[][];
     
 }
 

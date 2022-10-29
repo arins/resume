@@ -3,6 +3,16 @@
     "lastname": "Sinabian",
     "email": "arin.sinabian@gmail.com",
     "birthday": "1984-04-01T01:00:00",
+    "pdfLayout": [
+        [0, 1],
+        [2, 3],
+        [4, 5],
+        [6, 7],
+        [8, 9, 10],
+        [11, 12, 13],
+        [14, 15, 16, 17]
+
+    ],
     "en": {
         "role": "Full stack developer/Architect",
         "aboutMe": "I am a system architect with both backend and frontend experience. I started working as a developer in 2008 and have worked in different industries and in different countries. I am a creative developer who comes up with suggestions for functions and solutions myself. My strengths lie in my ability to communicate with other developers and customers/product owner and so on. I am very driven, analytical and positive. I am social and find it easy to make connections. I find it easy to learn new technology and methods for solving tasks. I think it's fun to spread my knowledge but also good at listening and taking in new knowledge.",
@@ -234,7 +244,7 @@
             },
             {
                 "title": "Flygstolar.se/ATE (inhouse at M-Bition)",
-                "icon": "flygstolar.png",
+                "icon": "/flygstolar.png",
                 "period": {
                     "from": "2014-01-01T00:00:00Z",
                     "to": "2014-12-01T00:00:00Z"
@@ -259,7 +269,7 @@
             },
             {
                 "title": "Tele2 (Consulting via M-Bition)",
-                "icon": "Tele2_logo.svg",
+                "icon": "/Tele2_logo.svg",
                 "period": {
                     "from": "2011-12-01T00:00:00Z",
                     "to": "2014-01-01T00:00:00Z"
@@ -284,7 +294,7 @@
             },
             {
                 "title": "Bahnhof (Konsult via Netlight)",
-                "icon": "bahnhof.svg",
+                "icon": "/bahnhof.svg",
                 "period": {
                     "from": "2011-06-01T00:00:00Z",
                     "to": "2011-12-01T00:00:00Z"
@@ -309,7 +319,7 @@
             },
             {
                 "title": "SCM Ventures (Consulting via Netlight)",
-                "icon": "blocket.svg",
+                "icon": "/blocket.svg",
                 "period": {
                     "from": "2011-04-01T00:00:00Z",
                     "to": "2011-06-01T00:00:00Z"
@@ -334,7 +344,7 @@
             },
             {
                 "title": "Media Norge Digital (Consulting via Netlight)",
-                "icon": "schibsted-logo-vector-xs.png",
+                "icon": "/schibsted-logo-vector-xs.png",
                 "period": {
                     "from": "2010-10-01T00:00:00Z",
                     "to": "2011-04-01T00:00:00Z"
@@ -359,7 +369,7 @@
             },
             {
                 "title": "TELE2/COMVIQ (Konsult via Done Interactive)",
-                "icon": "comviq.png",
+                "icon": "/comviq.png",
                 "period": {
                     "from": "2009-10-01T00:00:00Z",
                     "to": "2010-10-01T00:00:00Z"
@@ -434,7 +444,7 @@
             },
             {
                 "title": "Hewlett Packard (Praktik via Tongji University)",
-                "icon": "hp-hewlett-packard.svg",
+                "icon": "/hp-hewlett-packard.svg",
                 "period": {
                     "from": "2008-01-01T00:00:00Z",
                     "to": "2008-06-01T00:00:00Z"
@@ -690,7 +700,7 @@
             },
             {
                 "title": "Flygstolar.se/ATE (inhouse på M-Bition)",
-                "icon": "flygstolar.png",
+                "icon": "/flygstolar.png",
                 "period": {
                     "from": "2014-01-01T00:00:00Z",
                     "to": "2014-12-01T00:00:00Z"
@@ -715,7 +725,7 @@
             },
             {
                 "title": "Tele2 (Konsult via M-Bition)",
-                "icon": "Tele2_logo.svg",
+                "icon": "/Tele2_logo.svg",
                 "period": {
                     "from": "2011-12-01T00:00:00Z",
                     "to": "2014-01-01T00:00:00Z"
@@ -740,7 +750,7 @@
             },
             {
                 "title": "Bahnhof (Konsult via Netlight)",
-                "icon": "bahnhof.svg",
+                "icon": "/bahnhof.svg",
                 "period": {
                     "from": "2011-06-01T00:00:00Z",
                     "to": "2011-12-01T00:00:00Z"
@@ -765,7 +775,7 @@
             },
             {
                 "title": "SCM Ventures (Konsult via Netlight)",
-                "icon": "blocket.svg",
+                "icon": "/blocket.svg",
                 "period": {
                     "from": "2011-04-01T00:00:00Z",
                     "to": "2011-06-01T00:00:00Z"
@@ -790,7 +800,7 @@
             },
             {
                 "title": "Media Norge Digital (Konsult via Netlight)",
-                "icon": "schibsted-logo-vector-xs.png",
+                "icon": "/schibsted-logo-vector-xs.png",
                 "period": {
                     "from": "2010-10-01T00:00:00Z",
                     "to": "2011-04-01T00:00:00Z"
@@ -815,7 +825,7 @@
             },
             {
                 "title": "TELE2/COMVIQ (Konsult via Done Interactive)",
-                "icon": "comviq.png",
+                "icon": "/comviq.png",
                 "period": {
                     "from": "2009-10-01T00:00:00Z",
                     "to": "2010-10-01T00:00:00Z"
@@ -890,7 +900,7 @@
             },
             {
                 "title": "Hewlett Packard (Praktik via Tongji University)",
-                "icon": "hp-hewlett-packard.svg",
+                "icon": "/hp-hewlett-packard.svg",
                 "period": {
                     "from": "2008-01-01T00:00:00Z",
                     "to": "2008-06-01T00:00:00Z"

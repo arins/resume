@@ -17,7 +17,7 @@ export default function Experience({experience, counter}: {experience:Experience
     var to = experience.period?.to ? new Date(experience.period?.to) : null;   
     return (
         <div className="relative" data-aos={ counter % 2 ? "fade-left" : "fade-right"}>
-            <div className="pt-4 pb-4 bg-white" >
+            <div className="pt-4 pb-4 bg-white">
                 
                 <h2 className="text-xl font-bold mb-2 flex flex-row pb-2">
                     { experience?.icon ? (
@@ -37,7 +37,7 @@ export default function Experience({experience, counter}: {experience:Experience
                     </div>
                 </h2>
                 
-                <p className="mb-4">
+                <p className="mb-4 print:text-sm">
                     {experience?.description}
                 </p>
                 <div>
@@ -45,7 +45,7 @@ export default function Experience({experience, counter}: {experience:Experience
                 </div>
             </div>
                     
-            <div className="inset-x-1/2 border-l-2 border-gray-200 top-0 relative z-0 w-1 h-32 md:h-60">
+            <div className="inset-x-1/2 border-l-2 border-gray-200 top-0 relative z-0 w-1 h-32 md:h-60 print:hidden">
                         
             </div>
         </div>

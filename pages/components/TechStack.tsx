@@ -12,12 +12,12 @@ export default function TechStack()
             return (
                 
                 <>
-                    <div className="flex flex-col pt-10 p-14 pb-6">
+                    <div className="flex flex-col pt-10 p-14 pb-6 ">
                         <h2     className="text-2xl font-bold text-center">
                             {settings.settings.lang == "sv" ? "Teknik & Verktyg" : "Technologies & Tools"} 
                         </h2>
                     </div>
-                    <div className="hidden md:block overflow-hidden">
+                    <div className="hidden md:block overflow-hidden print:hidden">
                         <div className="flex pt-4 pb-4 justify-evenly items-center ">
                             <Tooltip title="ASP.NET">
                                 <img className="w-16" src="/Microsoft_.NET_logo.svg"></img>
@@ -72,8 +72,8 @@ export default function TechStack()
 
                     
 
-                    <div className="md:hidden overflow-hidden">
-                        <div className="flex pt-10 pb-4 justify-evenly items-center" data-aos="fade-right">
+                    <div className="md:hidden overflow-hidden ">
+                        <div className="flex pt-10 pb-4 justify-evenly items-center print:pb-0 print:pt-3" data-aos="fade-right">
 
                             <img className="w-16" src="/Microsoft_.NET_logo.svg"></img>
                             <img className="w-16" src="/C_Sharp_wordmark.svg"></img>
@@ -82,7 +82,7 @@ export default function TechStack()
                             
                             
                         </div>
-                        <div className="flex pt-10 pb-4 justify-evenly items-center " data-aos="fade-left">
+                        <div className="flex pt-10 pb-4 justify-evenly items-center print:pb-0 print:pt-3" data-aos="fade-left">
                             <img className="w-16" src="/Typescript_logo_2020.svg"></img>
                             <img className="w-16" src="/Unofficial_JavaScript_logo_2.svg"></img>
                             
@@ -90,15 +90,15 @@ export default function TechStack()
                             <img className="w-16" src="/React-icon.svg"></img>
                             
                         </div>
-                        <div className="flex pt-10 justify-evenly items-center" data-aos="fade-right">
+                        <div className="flex pt-10 justify-evenly items-center print:pb-0 print:pt-3" data-aos="fade-right">
                             <img className="w-16" src="/docker.svg"></img>
                             <img className="w-16" src="/sql-database-generic.svg"></img>
                             <img className="w-16" src="/azure_cosmos_db_logo_freelogovectors.net_.png"></img>           
                             <img className="w-16 h-16"  src="/rabbitmq-logo-25641A76DE-seeklogo.com.png"></img>
                             
                         </div>
-                        <div className="flex pt-10 justify-evenly items-center" data-aos="fade-right">
-                        <img className="w-16 h-16"  src="/apache_kafka-icon.svg"></img>
+                        <div className="flex pt-10 justify-evenly items-center print:pb-0 print:pt-3" data-aos="fade-right">
+                            <img className="w-16 h-16"  src="/apache_kafka-icon.svg"></img>
                             <img className="w-16 h-16"  src="/helmsh-icon.svg"></img>
                             <img className="w-16 h-16"  src="/Git-Icon-1788C.svg"></img>
                         </div>

@@ -8,7 +8,7 @@ export default function TechSide({tech, techSide}: {tech:string[], techSide: str
 {
     let counter = 0;
     return (
-        <div key={techSide} className="mb-2">
+        <div key={techSide} className="mb-2 text-sm print:text-xs">
             <div className="flex flex-row flex-wrap">
                 <div className="mr-2 font-bold">
                     {techSide}:
