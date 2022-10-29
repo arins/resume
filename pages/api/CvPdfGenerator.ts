@@ -18,7 +18,7 @@ class CvPdfGenerator {
     private fileLocation = `./tmp/`;
     private englishCvFilename = 'cv-en.pdf';
     private swedishCvFilename = 'cv-sv.pdf';
-    private baseUrl = "http://localhost:3000";
+    private baseUrl = "http://localhost:3001";
 
     constructor() {
 
