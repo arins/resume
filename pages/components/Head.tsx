@@ -4,14 +4,19 @@ import { AboutMe, Cv } from "../api/cv";
 import { PageContext } from "../index";
 import EnglishSwitch from "./EnglisSwitch";
 
-export default function Head({cv}: {cv:Cv})
+export default function Head({cv, lang}: {cv:Cv, lang?: string })
 {
     
     return (
             <PageContext.Consumer> 
                 { 
+
                     (settings) => {
-                        const aboutMe:AboutMe = cv && cv[settings.settings.lang];
+                        let choosenLang = settings.settings.lang;
+                        if(lang){
+                            choosenLang = lang;
+                        }
+                        const aboutMe:AboutMe = cv && cv[choosenLang];
                         return (
                             <>
                                 <div className="flex flex-row-reverse bg-sky-600 pt-2 pr-2 print:hidden">
@@ -22,7 +27,7 @@ export default function Head({cv}: {cv:Cv})
                                 
                                 <div className="flex flex-1 text-black p-10 pb-2 pt-2 md:p-10 md:pb-6 md:pt-6 flex-col bg-sky-600 print:bg-sky-600">
                                     
-                                    <div className="flex flex-row justify-center pb-10 pt-10">
+                                    <div className="flex flex-row justify-center pb-10 pt-10 print:pb-5 print:pt-5">
                                         <div className="flex align-middle p-2 rounded-full bg-white w-62 h-62 md:w-70 md:h-70 ">
                                             <img src="/arin.jpg" className="flex rounded-full w-60 h-60 md:w-70 md:h-70 animate__animated animate__backInDown"></img>
                                         </div>
@@ -34,7 +39,7 @@ export default function Head({cv}: {cv:Cv})
                                                     {cv?.name} {cv?.lastname}
                                                 </h1>
                                             </div>
-                                            <div className="flex flex-row justify-center flex-1 pb-20">
+                                            <div className="flex flex-row justify-center flex-1 pb-20 print:pb-10">
                                                 <p className="text-lg text-lime-400 text-center">
                                                     {aboutMe?.role}
                                                 </p>

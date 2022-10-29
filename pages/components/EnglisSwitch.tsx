@@ -65,7 +65,7 @@ export default function EnglishSwitch()
         } label={
           <div style={{"paddingTop":"1px"}} className="flex flex-row align-middle content-center">
             <div className="">
-              {settings.lang === 'sv' ? <img className="w-4" alt="Switch to english" src="en.png"></img> : <img alt="switch to swedish" className="w-4" src="sv.png"></img>}
+              {settings.lang === 'sv' ? <img className="w-4" alt="Switch to english" src="/en.png"></img> : <img alt="switch to swedish" className="w-4" src="/sv.png"></img>}
               
             </div>
             <div className="hidden md:block text-xs md:text-sm ml-2 text-gray-600">{label}</div>
