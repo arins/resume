@@ -1,4 +1,4 @@
-export interface Cv{
+export interface Cv {
     name: string;
     lastname: string,
     email: string,
@@ -7,39 +7,39 @@ export interface Cv{
     sv: AboutMe,
     skills: Skill[];
     pdfLayout: number[][];
-    
+
 }
 
 export interface AboutMe {
-    
-    
-        role: string;
-        aboutMe: string;
-        experince: ExperienceEntry[];
-    
+
+
+    role: string;
+    aboutMe: string;
+    experince: ExperienceEntry[];
+
 }
 export interface Skill {
-    name:string;
+    name: string;
     level: number;
     icon?: string;
 }
-export interface ExperienceEntry{
+export interface ExperienceEntry {
     title: string;
     icon?: string;
     period: Period;
     role: string;
     location: string;
     description: string;
-    tech: Tech; 
+    tech: Tech;
 }
-export interface Period{
-    
-        from: string,
-        to?: string
-    
+export interface Period {
+
+    from: string,
+    to?: string
+
 }
 
-export interface Tech{
+export interface Tech {
     server: string[];
     client: string[];
     devops: string[];

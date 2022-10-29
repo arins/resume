@@ -1,0 +1,1269 @@
+{
+  "name": "Arin",
+  "lastname": "Sinabian",
+  "email": "arin.sinabian@gmail.com",
+  "birthday": "1984-04-01T01:00:00",
+  "pdfLayout": [
+    [0, 1],
+    [2, 3],
+    [4, 5],
+    [6, 7],
+    [8, 9, 10],
+    [11, 12, 13],
+    [14, 15, 16, 17]
+  ],
+  "en": {
+    "role": "Freelancing Full stack developer/Architect",
+    "aboutMe": "I am a system architect with both backend and frontend experience. I started working as a developer in 2008 and have worked in different industries and in different countries. I am a creative developer who comes up with suggestions for functions and solutions myself. My strengths lie in my ability to communicate with other developers and customers/product owner and so on. I am very driven, analytical and positive. I am social and find it easy to make connections. I find it easy to learn new technology and methods for solving tasks. I think it's fun to spread my knowledge but also good at listening and taking in new knowledge.",
+    "experince": [
+      {
+        "title": "Charge Amps",
+        "icon": "/logo-charge-amps-large.png",
+        "period": {
+          "from": "2022-02-01T00:00:00Z",
+          "to": null
+        },
+        "role": "Backend developer",
+        "location": "Stockholm",
+        "description": "Charge Amps makes charging boxes for electric/hybrids cars. Different teams were responsible for different parts of Charge Amp's cloud service. I was in a team that developed OCPP server, but I contributed to several teams. My role was to develop the OCPP server that follows the OCPP standard for communication between cloud and charging box. This includes, among other things, controlling the current strength during charging. Load balancing chargers between other consumers of power so fuses don't blow. I contributed my knowledge in microservice architecture, unit testing, integration testing. I set up new microservices from scratch written in .NET with Helm charts deployed on Kubernetes. I also learned a new framework called Proto.Actor which is a distributed programming model called Actor Model. OCPP server was developed with the Proto.Actor framework which made it possible to scale to 100,000 charging boxes simultaneously without problems.",
+        "tech": {
+          "server": [
+            "Microservices",
+            "C#",
+            "ASP.NET 6",
+            "Proto.Actor",
+            "Dapper",
+            "SQL",
+            "xUnit.NET",
+            "Swashbuckle (Swagger)",
+            "REST API",
+            "MassTransit"
+          ],
+          "client": [],
+          "environment": [
+            "Azure",
+            "Azure SQL",
+            "Docker",
+            "Kubernetes",
+            "Azure K8s",
+            "Azure Redis",
+            "RabbitMQ",
+            "Kafka",
+            "Azure Cosmos DB"
+          ],
+          "devops": [
+            "Azure DevOps",
+            "Azure Container Registry",
+            "GIT",
+            "Azure Pipelines/Releases",
+            "Kubernetes",
+            "Helm",
+            "Grafana",
+            "Loki",
+            "Tempo",
+            "Prometheus"
+          ]
+        }
+      },
+      {
+        "title": "Klara consulting (Consulting via Spree)",
+        "icon": "/KC_logo_Black_payoff.svg",
+        "period": {
+          "from": "2021-01-01T00:00:00Z",
+          "to": "2022-02-01T00:00:00Z"
+        },
+        "role": "Full stack developer/Architect",
+        "location": "Stockholm",
+        "description": "Klara Consulting had developed a portal for its clients but lacked document sharing functionality with its clients. Klara Consulting used SharePoint for its clients, but it was not optimal. Me and UX were given the role of finding out what the requirements were and what functionality was available. UX developed the design in Figma and together with the users, I and UX found the requirements together with Klara Consulting. The existing system ran in Kubernetes but was developed as a monolith. I developed a microservice architecture where different microservices were responsible for different business functions. I also made a service that handled SharePoint in a simple way. Which enabled document sharing based on office 365 for external parties without using SharePoint. I also set up CI/CD with Azure DevOps and Helm charts.",
+        "tech": {
+          "server": [
+            "Microservices",
+            "Event driven",
+            "C#",
+            "ASP.NET 5",
+            "Entity Framework Core",
+            "SQL",
+            "MSTest",
+            "Swashbuckle (Swagger)",
+            "REST API",
+            "Microsoft Graph API",
+            "MSAL"
+          ],
+          "client": [
+            "TypeScript",
+            "Angular",
+            "HTML",
+            "SCSS",
+            "Tailwind CSS",
+            "Visual Studio Code"
+          ],
+          "environment": [
+            "Azure DevOps",
+            "Azure Container Registry",
+            "GIT",
+            "Azure Pipelines/Releases",
+            "Kubernetes",
+            "Helm",
+            "Terraform"
+          ],
+          "devops": [
+            "Docker",
+            "Azure Kubernetes",
+            "Azure Kubernetes",
+            "Azure Redis",
+            "Azure SQL",
+            "Azure Service Bus",
+            "RabbitMQ (lokal utv)",
+            "Bridge to Kubernetes"
+          ]
+        }
+      },
+      {
+        "title": "Klarna (In-house at Spree)",
+        "icon": "/klarna.svg",
+        "period": {
+          "from": "2021-05-01T00:00:00Z",
+          "to": "2021-11-01T00:00:00Z"
+        },
+        "role": "Full stack developer/Architect",
+        "location": "Stockholm",
+        "description": "Spree was commissioned to launch a game for Klarna to be used internally for their support department. It was a web-based game written in Unity. My role was to develop an architecture for the backend that would manage users and results during the game. Users were logged in via Azure Active Directory B2C then sent into the game in the browser. I was also responsible for the backend being able to handle the large number of employees from different parts of the world who would be playing at the same time. I used the Azure CDN to be able to deliver the game at about 200-300Mb to all users without burdening the actual server with the game. I also developed a control of the game so that it was possible to make \"events\" of the game so that everyone could enter the game at the same time, which the customer needed.",
+        "tech": {
+          "server": [
+            "C# ASP.NET 5",
+            "Azure Cosmos DB",
+            "Swashbuckle (Swagger)",
+            "REST API",
+            "Docker",
+            "MSAL"
+          ],
+          "client": [
+            "Angular",
+            "TypeScript",
+            "HTML",
+            "SCSS",
+            "Visual Studio Code"
+          ],
+          "environment": [
+            "Azure",
+            "Azure Cosmos DB",
+            "Azure CDN",
+            "Azure Active Directory B2C",
+            "Lasttestning (https://loadster.app/)"
+          ],
+          "devops": [
+            "Azure DevOps",
+            "Azure Container Registry",
+            "GIT",
+            "Azure Pipelines/Releases"
+          ]
+        }
+      },
+      {
+        "title": "MTR (Consulting via Spree)",
+        "icon": "/mtr.png",
+        "period": {
+          "from": "2020-11-01T00:00:00Z",
+          "to": "2021-01-31T00:00:00Z"
+        },
+        "role": "Backend developer",
+        "location": "Stockholm",
+        "description": "MTR Needed help with maintenance and development of their apps. I joined as a backend developer but also as extra support for the frontend. I contributed knowledge in how to write code that is easy to test in the backend. I shared my experience and knowledge with the team remotely via teams and on site. I reviewed both backend and frontend code on pull requests. I also set up Azure SignalR and implemented it in the backend and showed the frontend developers how to use it. I also worked closely with the tester, so bugs were resolved quickly. I made suggestions for improvements for Azure DevOps pipelines and automatic update of APIM which I implemented.",
+        "tech": {
+          "server": [
+            "C#",
+            "ASP.NET 5",
+            "Entity Framework Core",
+            ".NET Core IoC",
+            "NuGet",
+            "SQL",
+            "MSTest",
+            "Swashbuckle (Swagger)",
+            "REST API"
+          ],
+          "client": [
+            "Angular",
+            "TypeScript",
+            "HTML",
+            "SCSS",
+            "Visual Studio Code"
+          ],
+          "environment": [
+            "Docker, Azure Kubernetes",
+            "Azure API Managment",
+            "Cosmos DB",
+            "Azure SignalR"
+          ],
+          "devops": [
+            "Azure DevOps",
+            "Azure Container Registry",
+            "GIT",
+            "Azure Pipelines/Releases"
+          ]
+        }
+      },
+      {
+        "title": "World Expo 2020 (in-house at Spree)",
+        "icon": "/Expo-2020-logo.png",
+        "period": {
+          "from": "2020-01-01T00:00:00Z",
+          "to": "2021-08-01T00:00:00Z"
+        },
+        "role": "Full stack developer/Architect",
+        "location": "Stockholm",
+        "description": "World Expo 2020 is an exhibition that was supposed to be held in Dubai in 2020 (postponed to 2021 due to covid-19) where countries showcase the latest in technology, development, research, etc. Spree was commissioned to develop part of Sweden's exhibition. Spree developed interactive solutions in Unity and web that would present Sweden and the companies that are exhibitors. My role in the project was to develop a web-based CMS that technically suited the interactive Unity stations and to develop a web application for the guides in the exhibition. I worked in a team of 10 people where my role was full stack developer and responsible for the Unity developers being able to easily integrate with the CMS. I met with the developers daily to support them technically. I made sure that the CMS was easy to use for expo partners and I also worked out how the interface should look. I sketched how the entire architecture and integration would look like between the CMS and all applications. I was also responsible for developing a progressive web application that would help the guides to navigate and help visitors.",
+        "tech": {
+          "server": [
+            "C#",
+            "ASP.NET Core 3.1",
+            "Entity Framework Core",
+            "SQL",
+            "LINQ",
+            ".NET Core IoC",
+            "NuGet",
+            "NUnit",
+            "Swashbuckle (Swagger)",
+            "REST API"
+          ],
+          "client": [
+            "TypeScript",
+            "Angular",
+            "Material Design",
+            "Flex Layout",
+            "NPM",
+            "HTML",
+            "SCSS",
+            "Visual Studio Code",
+            "React",
+            "Redux",
+            "React Router"
+          ],
+          "environment": [
+            "Nginx",
+            "Azure",
+            "Azure SQL",
+            "Azure App Service (Docker container), Docker Container"
+          ],
+          "devops": [
+            "Bitbucket (Git)",
+            "Docker hub",
+            "Docker Container",
+            "WSL 2",
+            "Docker Compose (use in Development)"
+          ]
+        }
+      },
+      {
+        "title": "Kone (in-house at Spree)",
+        "icon": "/KONE.svg",
+        "period": {
+          "from": "2018-03-01T00:00:00Z",
+          "to": "2020-02-01T00:00:00Z"
+        },
+        "role": "Full stack developer/Architect",
+        "location": "Stockholm",
+        "description": "KONE needed a tool/system to support the business from sales to a finished elevator. I helped KONE further develop the SET tool (Sales and Engineering Tool). The purpose of the system is to simplify and guide different roles at KONE through the process from selling to building an elevator. The requirements were not decided but gathered during development by me and the customer together and released continuously. My role was to develop the system and to lead a team of 3 developers where I planned sprints with a UX/Project Manager with frequent releases of about 2 - 4 weeks. I relieved the developers from the DevOps bits so the developers could focus on development. For example, I produced scripts for the developers so that manual processes would be automated. The project manager and I met together with the customer regularly to collect requirements from the customer before each release. I also suggested features to KONE and many of the suggestions were implemented and appreciated by KONE. I introduced CI/CD to the team to improve the quality of new version releases. I also helped the developers by making diagrams of the architecture so that the developers could more easily develop new functions. SET is used today by KONE Sweden and KONE Norway, and KONE is so satisfied that it is also Denmark's turn to use the system.",
+        "tech": {
+          "server": [
+            "ASP.NET 4.7",
+            "ASP.NET Core",
+            "ASP.NET Web API",
+            "ASP.NET Core MVC",
+            "Entity Framework",
+            "SQL",
+            "LINQ",
+            "Autofac",
+            "NuGet",
+            "REST API"
+          ],
+          "client": [
+            "TypeScript",
+            "Angular",
+            "Material Design",
+            "Flex Layout",
+            "NPM",
+            "HTML",
+            "SCSS",
+            "Visual Studio Code",
+            "E2E test Protractor",
+            "Jasmin"
+          ],
+          "environment": [
+            "Azure",
+            "Azure SQL",
+            "Azure App Service",
+            "Azure Logic Apps",
+            "Azure Search",
+            "Azure AD",
+            "Azure Storage",
+            "Visual Studio 2019"
+          ],
+          "devops": [
+            "AppVeyor",
+            "Bitbucket (Git)",
+            "PowerShell (deploy, DevOps)",
+            "Angular CLI (Webpack)"
+          ]
+        }
+      },
+      {
+        "title": "Symbrio (Consulting via Spree)",
+        "icon": "/symbrio.svg",
+        "period": {
+          "from": "2016-11-01T00:00:00Z",
+          "to": "2018-03-01T00:00:00Z"
+        },
+        "role": "Full stack developer",
+        "location": "Stockholm",
+        "description": "Symbrio is a company that develops invoicing systems for the construction industry. Both companies that are buyers and retailers/suppliers are customers of Symbrio and use the system. My role was to step in as a frontend consultant to improve Symbrio's user interface. The lift was done with technical help from Angular and configuring CI/CD for Angular in Jenkins. I worked closely with other backend developers and UX/UI to tie the new design and flow together with the backend. I also spread knowledge about Angular within the team. The graphic designer and I had a close dialogue about the possibilities, and I came up with suggestions for improvements in the interface. The team I worked with consisted of 7 developers, 1 designer and 2 testers. The team was divided according to requirements/functions and then depending on the requirements, I could work with 1 - 2 developers and 1 tester. I also had a workshop with Symbrio's developers where we built a warning light when a build step in Jenkins failed. We used NodeMCU which controlled relays. The small workshop was really appreciated by the Symbrio developers.",
+        "tech": {
+          "server": [
+            "C#",
+            "Web API ASP.NET",
+            "WebSockets",
+            "NHibernate",
+            "SQL"
+          ],
+          "client": [
+            "TypeScript",
+            "JavaScript",
+            "Angular",
+            "AngularJS (fasades ut)",
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "LESS",
+            "Webforms (moving away to Angular)"
+          ],
+          "environment": [
+            "IIS",
+            "Windows Server 2012",
+            "SQL Server 2012",
+            "Visual Studio 2017",
+            "Visual Studio Code",
+            "TFS",
+            "NPM"
+          ],
+          "devops": ["Jenkins", "TFS", "Angular CLI", "Webpack"]
+        }
+      },
+      {
+        "title": "Logivia/Visma (Consulting via Spree)",
+        "icon": "/visma.svg",
+        "period": {
+          "from": "2015-09-01T00:00:00Z",
+          "to": "2016-11-01T00:00:00Z"
+        },
+        "role": "Full stack developer",
+        "location": "Stockholm",
+        "description": "Logivia is an IT company that develops logistics systems which has a collaboration with Visma. The system handles orders for transports and with the help of the system the customer can speed up their planning of transports. The system can plan and optimize runs/pickups and display these in real time and warn if something goes wrong. The team I worked with consisted of 4 developers, 1 tester and a project manager. I had to develop several different parts of the system in the whole stack from database to HTML and JavaScript where I also had to develop components for the user interface. I was support especially for the frontend development where I shared knowledge with the others. Since there was no design or flow, I came up with suggestions that I implemented myself.",
+        "tech": {
+          "server": [
+            "MVC 5 .NET C#",
+            "Entity Framework 6",
+            "WCF",
+            "Web Services"
+          ],
+          "client": [
+            "JavaScript",
+            "Knockout.js",
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "LESS"
+          ],
+          "environment": [
+            "IIS",
+            "Windows Server 2012",
+            "SQL server 2012",
+            "Visual Studio 2013",
+            "TFS"
+          ]
+        }
+      },
+      {
+        "title": "Klustr (inhouse project at Spree)",
+        "icon": null,
+        "period": {
+          "from": "2015-01-01T00:00:00Z",
+          "to": "2015-08-01T00:00:00Z"
+        },
+        "role": "Backendutvecklare",
+        "location": "Stockholm",
+        "description": "My role in the project was to run and plan backend development. The backend consisted of a REST API that the Klustr app (iOS and Android) communicated with. Being the only backend developer, I took a lot of responsibility and planned the work together with the other two app developers. The team consisted of 2 app developers, 1 tester and together with me as backend developer we developed the Klustr app. The backend also consisted of the Cloud Service that updated the users' data and communicated via Service Bus to Azure App Service. I chose this split so heavy/long running task would run in Cloud Service to offload Azure App Service which would only handle API calls. I developed parts of that architecture.",
+        "tech": {
+          "server": ["Web API 2 .NET", "C#", "OAuth", "Entity Framework 6"],
+          "client": [],
+          "environment": [
+            "Visual Studio 2015",
+            "Azure Web app",
+            "Azure Cloud Service",
+            "Azure Service Bus",
+            "Azure Storage",
+            "Azure SQL Server",
+            "MSTest"
+          ],
+          "devops": ["SVN", "TeamCity"]
+        }
+      },
+      {
+        "title": "Flygstolar.se/ATE (inhouse at M-Bition)",
+        "icon": "/flygstolar.png",
+        "period": {
+          "from": "2014-01-01T00:00:00Z",
+          "to": "2014-12-01T00:00:00Z"
+        },
+        "role": "Full stack developer",
+        "location": "Stockholm",
+        "description": "When I worked at M-bition, which owned the service ATE and flygstolar.se, I worked on further developing ATE, which is a price comparison engine for air travel and hotels. ATE was thus a SaaS service used by other partners as well. ATE collects prices from several travel agencies and compiles the data to then be presented by a travel site that uses ATE. Users can then search for the cheapest flight or hotel price from the travel agency the customer prefers. My role was to further develop the hotel search service and add new travel agencies to the price comparison engine. I also made improvements in the architecture to be able to add more travel agencies more easily.",
+        "tech": {
+          "server": [
+            "MVC 3 .NET",
+            "C#",
+            "Web Forms",
+            "WCF",
+            "Web Services",
+            "ETL"
+          ],
+          "client": ["JavaScript", "CSS", "Knockout.js", "Bootstrap", "HTML"],
+          "environment": [
+            "IIS",
+            "Windows Server 2008",
+            "Windows Server 2012",
+            "SQL Server 2008",
+            "Visual Studio 2012",
+            "SVN"
+          ],
+          "devops": []
+        }
+      },
+      {
+        "title": "Tele2 (Consulting via M-Bition)",
+        "icon": "/Tele2_logo.svg",
+        "period": {
+          "from": "2011-12-01T00:00:00Z",
+          "to": "2014-01-01T00:00:00Z"
+        },
+        "role": "Full stack developer",
+        "location": "Stockholm",
+        "description": "I worked in a SCRUM team with about 20 people divided into frontend and backend teams. My task was to support the frontend team with developing and maintaining the web shop written in C# with ASP.NET Web Forms. TeamCity was used to build, deploy and run tests for the frontend. I worked closely with the marketing department where I took personal responsibility and communicated clearly with them, so the results were as expected. I also worked with the configuration of different types of servers and trained colleagues how to configure these. I suggested replacing jQuery with AngularJS to simplify development of the interface and increase the possibilities, which was done with good results.",
+        "tech": {
+          "server": ["ASP .NET", "C#", "OpenText CMS"],
+          "client": ["JavaScript", "HTML", "CSS", "jQuery", "AngularJS"],
+          "environment": [
+            "IIS",
+            "Linux",
+            "SVN",
+            "Git",
+            "Windows Server",
+            "Visual Studio 2010",
+            "TeamCity",
+            "REHL",
+            "Apache HTTP Server",
+            "Memcached",
+            "PHP",
+            "MySQL",
+            "Magento"
+          ],
+          "devops": []
+        }
+      },
+      {
+        "title": "Bahnhof (Konsult via Netlight)",
+        "icon": "/bahnhof.svg",
+        "period": {
+          "from": "2011-06-01T00:00:00Z",
+          "to": "2011-12-01T00:00:00Z"
+        },
+        "role": "Full stack developer",
+        "location": "Stockholm",
+        "description": "I worked on expanding Bahnhof’s administration system for telephone exchanges. My role was to integrate with SNPAC's API so that Bahnhof's administration system could carry out porting of telephone numbers more easily. Unfortunately, I did not finish that assignment and handed it over to a colleague who completed the integration. I laid the foundation for the integration, and it was easy for the colleague to take over and complete the work.",
+        "tech": {
+          "server": ["Java", "Ruby on Rails"],
+          "client": ["JavaScript", "CSS", "HTML"],
+          "environment": ["Linux", "SVN", "Git", "Vim", "RubyMine"],
+          "devops": []
+        }
+      },
+      {
+        "title": "SCM Ventures (Consulting via Netlight)",
+        "icon": "/blocket.svg",
+        "period": {
+          "from": "2011-04-01T00:00:00Z",
+          "to": "2011-06-01T00:00:00Z"
+        },
+        "role": "Frontend developer",
+        "location": "Stockholm",
+        "description": "SCM Ventures is part of blocket.se but more aimed towards the international market. My role was as a web developer to develop HTML, CSS, JavaScript for \"feature phones\" (older phones). The goal was to get a simple version of blocket.se out for the Indian market. SCM Ventures did not know what limitations existed in \"feature phones\", so I solved the challenge by finding statistics for the phones that were most common in India and installing and documenting emulators for these. This work could be used to further develop for other countries where these emulators were needed. I worked independently in this role but communicated with other developers within SCM Ventures.",
+        "tech": {
+          "server": ["PHP", "Blocket Templating"],
+          "client": ["JavaScript", "CSS", "HTML"],
+          "environment": ["Linux", "Bazar versionshantering", "Vim"],
+          "devops": []
+        }
+      },
+      {
+        "title": "Media Norge Digital (Consulting via Netlight)",
+        "icon": "/schibsted-logo-vector-xs.png",
+        "period": {
+          "from": "2010-10-01T00:00:00Z",
+          "to": "2011-04-01T00:00:00Z"
+        },
+        "role": "Full stack developer",
+        "location": "Oslo",
+        "description": "I lived and consulted in Oslo for about 8 months because I got an assignment at Media Norge digital. MNO is part of Schibsted's Digital departments where the development of Schibsted's newspapers in Norway is run (aftenposten.no, bt.no, aftenbladet.no and others). My role was to help develop new versions of these sites. The team I worked in realized that by developing a common front-end framework for all newspapers, they would save a lot of time. I was involved in developing the framework together with MNO's developers. bt.no first launched with the framework and then continued with Aftenposten and Aftenbladet. The framework that was developed made it much easier for the remaining newspapers to switch to the new CMS Escenic. I worked according to SCRUM with 3 frontend developers and 5 other backend developers. ",
+        "tech": {
+          "server": ["JSP", "Escenic"],
+          "client": ["JavaScript", "HTML", "CSS", "jQuery", "require.js"],
+          "environment": ["Linux Debian", "Tomcat", "Intellij IDE", "SVN"],
+          "devops": []
+        }
+      },
+      {
+        "title": "TELE2/COMVIQ (Konsult via Done Interactive)",
+        "icon": "/comviq.png",
+        "period": {
+          "from": "2009-10-01T00:00:00Z",
+          "to": "2010-10-01T00:00:00Z"
+        },
+        "role": "Full stack developer",
+        "location": "Stockholm",
+        "description": "I worked as a consultant at TELE2/COMVIQ where I had to support COMVIQ's team. My role was to develop features that the marketing department prioritized. For example. Top up prepaid card function with integration to a payment solution to make it easier for COMVIQ customers to top up prepaid cards via the web. I also was as extra support and helped develop the TELE2 business shop. I got to work in a SCRUM team of 10 people with daily stand-up’s and retros. I also had to develop the backend and frontend architecture for COMVIQ's new site, which was written in .NET and JavaScript.",
+        "tech": {
+          "server": ["ASP. NET", "C#", "Web Services", "LiveServer"],
+          "client": ["jQuery", "AJAX", "JavaScript", "JSON", "HTML", "CSS"],
+          "environment": [
+            "Linux",
+            "OpenText Reddot (CMS)",
+            "Windows Server 2008",
+            "IIS",
+            "Apache Tomcat (LiveServer)",
+            "Visual Studio 2010",
+            "SVN"
+          ],
+          "devops": []
+        }
+      },
+      {
+        "title": "Done Interactive",
+        "icon": null,
+        "period": {
+          "from": "2009-08-01T00:00:00Z",
+          "to": "2010-10-01T00:00:00Z"
+        },
+        "role": "Full stack developer",
+        "location": "Stockholm",
+        "description": "I worked as a full stack developer at Done Interactive. I worked with developing campaigns and company sites and systems for clients. Including customers such as COMVIQ, Blossa, Eurosport and other well-known brands. The clients I worked with appreciated my speed and communication.",
+        "tech": {
+          "server": ["ASP .NET", "C#", "SQL", "PHP", "Web Services"],
+          "client": ["jQuery", "AJAX", "JavaScript", "JSON", "HTML", "CSS"],
+          "environment": [
+            "IIS",
+            "Windows",
+            "Visual Studio 2008",
+            "SQL Server 2008",
+            "Adobe Photoshop",
+            "SVN"
+          ],
+          "devops": []
+        }
+      },
+      {
+        "title": "Fastcheck",
+        "icon": null,
+        "period": {
+          "from": "2008-04-01T00:00:00Z",
+          "to": "2009-08-01T00:00:00Z"
+        },
+        "role": "Full stack developer",
+        "location": "Stockholm",
+        "description": "Fastcheck is a company that provides travel guides in PDF format for download. My role was to integrate partner sites with Fastcheck's download system and develop Fastcheck’s site. I also developed a new integration method that made it easier for non-technical staff to create new integration for partners in a short time so that the travel guides could be distributed more quickly.",
+        "tech": {
+          "server": [],
+          "client": [],
+          "environment": [],
+          "devops": []
+        }
+      },
+      {
+        "title": "Hewlett Packard (Praktik via Tongji University)",
+        "icon": "/hp-hewlett-packard.svg",
+        "period": {
+          "from": "2008-01-01T00:00:00Z",
+          "to": "2008-06-01T00:00:00Z"
+        },
+        "role": "Full stack developer",
+        "location": "Shanghai",
+        "description": "I lived in Shanghai and interned at HP for 5 months via Tongji University where I was an exchange student. I helped develop an error reporting system used internally when hardware broke or did not work. I worked in a team of 3 people, which meant a lot of personal responsibility. I also ran a course in JavaScript for my colleagues who wanted to learn more about frontend development.",
+        "tech": {
+          "server": [],
+          "client": [],
+          "environment": [],
+          "devops": []
+        }
+      }
+    ]
+  },
+  "sv": {
+    "role": "Frilansande Fullstackutvecklare/Arkitekt",
+    "aboutMe": "Jag är systemarkitekt med både backend och frontend erfarenhet. Jag började jobba som utvecklare 2008 och har jobbat inom olika branscher och i olika länder. Jag är en kreativ utvecklare som själv kommer med förslag på funktioner och lösningar. Mina styrkor ligger i min förmåga att kommunicera med andra utvecklare och kunder/kravställare. Jag är mycket driven, analytisk och positivt lagd. Jag är social och har lätt för att knyta kontakter. Jag har lätt för att lära mig nya tekniker och metoder för att lösa uppgifter. Jag tycker att det är kul att sprida min kunskap men också bra på att lyssna och ta in ny kunskap.",
+    "experince": [
+      {
+        "title": "Charge Amps",
+        "icon": "/logo-charge-amps-large.png",
+        "period": {
+          "from": "2022-02-01T00:00:00Z",
+          "to": null
+        },
+        "role": "Backendutvecklare",
+        "location": "Stockholm",
+        "description": "Charge Amps gör laddboxar till elbilar/laddhybrider. Olika team ansvarade för olika delar av Charge Amps molntjänst. Jag var i ett team som utvecklade OCPP server men jag bidrog till flera team. Min roll var att utveckla OCPP server som följer OCPP standarden för kommunikation mellan moln och laddbox. Där ingår bland annat att styra strömstyrkan under laddning. Balansera laddning mellan övrig förbrukning så säkringar inte går. Jag bidrog med min kunskap inom mikrotjänstarkitektur, enhetstestning, integrations testning. Jag satte upp nya mikrotjänster från grunden skrivna i .NET med Helm Charts deployade på Kubernetes. Jag lärde mig även nytt ramverk kallat Proto.Actor som är ett sätt utveckla applikationer distribuerat efter aktormodellen. OCPP server var utvecklat med Proto.Actor ramverket som gjorde det möjligt att skala till 100 000 laddboxar samtidigt utan problem.",
+        "tech": {
+          "server": [
+            "Microservices",
+            "C#",
+            "ASP.NET 6",
+            "Proto.Actor",
+            "Dapper",
+            "SQL",
+            "xUnit.NET",
+            "Swashbuckle (Swagger)",
+            "REST API",
+            "MassTransit"
+          ],
+          "client": [],
+          "environment": [
+            "Azure",
+            "Azure SQL",
+            "Docker",
+            "Kubernetes",
+            "Azure K8s",
+            "Azure Redis",
+            "RabbitMQ",
+            "Kafka",
+            "Azure Cosmos DB"
+          ],
+          "devops": [
+            "Azure DevOps",
+            "Azure Container Registry",
+            "GIT",
+            "Azure Pipelines/Releases",
+            "Kubernetes",
+            "Helm",
+            "Grafana",
+            "Loki",
+            "Tempo",
+            "Prometheus"
+          ]
+        }
+      },
+      {
+        "title": "Klara consulting (Konsult via Spree)",
+        "icon": "/KC_logo_Black_payoff.svg",
+        "period": {
+          "from": "2021-01-01T00:00:00Z",
+          "to": "2022-02-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare/Arkitekt",
+        "location": "Stockholm",
+        "description": "Klara Consulting hade utvecklat en portal åt sina kunder men saknade dokumentdelning mot sina kunder. Klara Consulting använde Sharepoint ut mot sina kunder men det var inte optimalt. Jag och UX fick rollen att ta reda på vad kraven var och vilken funktionalitet som fanns. UX tog fram design i Figma och tillsammans med användarna tog jag och UX fram kraven. Det befintliga systemet kördes i Kubernetes men var utvecklat som en monolit. Jag tog fram en mikrotjänstarkitektur där olika mikrotjänster ansvarade för affärsfunktioner. Jag gjorde även en tjänst som hanterade Sharepoint på ett enkelt sätt. Vilket möjliggjorde en dokumentdelning baserad på Office 365 för externa parter utan att man faktiskt använde SharePoint. Jag satte även upp CI/CD med Azure DevOps och Helm Charts.",
+        "tech": {
+          "server": [
+            "Microservices",
+            "Event driven",
+            "C#",
+            "ASP.NET 5",
+            "Entity Framework Core",
+            "SQL",
+            "MSTest",
+            "Swashbuckle (Swagger)",
+            "REST API",
+            "Microsoft Graph API",
+            "MSAL"
+          ],
+          "client": [
+            "TypeScript",
+            "Angular",
+            "HTML",
+            "SCSS",
+            "Tailwind CSS",
+            "Visual Studio Code"
+          ],
+          "environment": [
+            "Azure DevOps",
+            "Azure Container Registry",
+            "GIT",
+            "Azure Pipelines/Releases",
+            "Kubernetes",
+            "Helm",
+            "Terraform"
+          ],
+          "devops": [
+            "Docker",
+            "Azure Kubernetes",
+            "Azure Kubernetes",
+            "Azure Redis",
+            "Azure SQL",
+            "Azure Service Bus",
+            "RabbitMQ (lokal utv)",
+            "Bridge to Kubernetes"
+          ]
+        }
+      },
+      {
+        "title": "Klarna (In-house Spree)",
+        "icon": "/klarna.svg",
+        "period": {
+          "from": "2021-05-01T00:00:00Z",
+          "to": "2021-11-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare/Arkitekt",
+        "location": "Stockholm",
+        "description": "Spree fick i uppdrag att lansera ett spel åt Klarna som skulle används internt för deras supportavdelning. Det var ett webbaserat spel skrivet i Unity. Min roll var att ta fram en arkitektur för backend som skulle hantera användare och resultat under spelets gång. Användare loggades in via Azure Active Directory B2C sedan skickades man in i spelet i webbläsaren. Jag ansvarade även att backend kunde hantera stora mängden anställda från olika delar av världen som skulle spela samtidigt. Jag använde mig av Azure CDN för att kunna leverera spelet på ca 200-300Mb till alla användare utan att belasta faktiska servern med spelet. Jag utvecklade även en styrning av spelet så det gick att göra ”event” av spelet så alla kunde komma in i spelet samtidigt vilket kunden behövde.",
+        "tech": {
+          "server": [
+            "C# ASP.NET 5",
+            "Azure Cosmos DB",
+            "Swashbuckle (Swagger)",
+            "REST API",
+            "Docker",
+            "MSAL"
+          ],
+          "client": [
+            "Angular",
+            "TypeScript",
+            "HTML",
+            "SCSS",
+            "Visual Studio Code"
+          ],
+          "environment": [
+            "Azure",
+            "Azure Cosmos DB",
+            "Azure CDN",
+            "Azure Active Directory B2C",
+            "Lasttestning (https://loadster.app/)"
+          ],
+          "devops": [
+            "Azure DevOps",
+            "Azure Container Registry",
+            "GIT",
+            "Azure Pipelines/Releases"
+          ]
+        }
+      },
+      {
+        "title": "MTR (Konsult via Spree)",
+        "icon": "/mtr.png",
+        "period": {
+          "from": "2020-11-01T00:00:00Z",
+          "to": "2021-01-31T00:00:00Z"
+        },
+        "role": "Backendutvecklare",
+        "location": "Stockholm",
+        "description": "MTR Behövde hjälp med förvaltning och nyutveckling. Jag gick in som backendutvecklare men också som extra stöd åt frontend. Jag bidrog med kunskap i hur man kan skriva kod som är enkel att enhets testa i backend. Jag delade med mig av min erfarenhet och kunskap med teamet på distans via teams och på plats. Jag granskade både backend och frontend kod vid pull request. Jag satte även upp Azure SignalR och implementerade det i backend och visade för frontend utvecklarna hur man kunde använda det. Jag hade också tätt samarbete med testaren så buggar löstes snabbt. Jag gav förslag på förbättringar för Azure Devops pipelines och automatisk uppdatering av APIM vilket jag implementerade.",
+        "tech": {
+          "server": [
+            "C#",
+            "ASP.NET 5",
+            "Entity Framework Core",
+            ".NET Core IoC",
+            "NuGet",
+            "SQL",
+            "MSTest",
+            "Swashbuckle (Swagger)",
+            "REST API"
+          ],
+          "client": [
+            "Angular",
+            "TypeScript",
+            "HTML",
+            "SCSS",
+            "Visual Studio Code"
+          ],
+          "environment": [
+            "Docker, Azure Kubernetes",
+            "Azure API Managment",
+            "Cosmos DB",
+            "Azure SignalR"
+          ],
+          "devops": [
+            "Azure DevOps",
+            "Azure Container Registry",
+            "GIT",
+            "Azure Pipelines/Releases"
+          ]
+        }
+      },
+      {
+        "title": "World Expo 2020 (in-house Spree)",
+        "icon": "/Expo-2020-logo.png",
+        "period": {
+          "from": "2020-01-01T00:00:00Z",
+          "to": "2021-08-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare/Arkitekt",
+        "location": "Stockholm",
+        "description": "World Expo 2020 är en utställning som skulle hållas i Dubai 2020 (uppskjuten till 2021 p.g.a. covid-19) där länder visar upp den senaste inom teknik, utveckling, forskning o.s.v. Spree fick i uppdrag att utveckla en del av Sveriges utställning. Spree tog fram interaktiva lösningar i Unity och webb som skulle presentera Sverige och företagen som är utställare. Min roll i projektet var att utveckla ett webbaserat CMS som passade tekniskt de interaktiva Unity-stationerna och att ta fram en webapplikation för guiderna i utställningen. Jag jobbade i ett team på 10 personer där min roll var fullstackutvecklare och ansvarig för att Unity-utvecklarna enkelt kunde integrera mot CMS:et. Jag hade möte med utvecklarna dagligen för att stötta dom tekniskt. Jag såg till att CMS:et var enkelt att använda för expopartners och jag tog även fram hur gränssnittet skulle ut. Jag skissade på hur hela arkitekturen och integrationen skulle se ut mellan CMS och alla applikationer. Jag vår också ansvarig att utveckla en progressive web app för guiderna som skulle hjälpa besökarna.",
+        "tech": {
+          "server": [
+            "C#",
+            "ASP.NET Core 3.1",
+            "Entity Framework Core",
+            "SQL",
+            "LINQ",
+            ".NET Core IoC",
+            "NuGet",
+            "NUnit",
+            "Swashbuckle (Swagger)",
+            "REST API"
+          ],
+          "client": [
+            "TypeScript",
+            "Angular",
+            "Material Design",
+            "Flex Layout",
+            "NPM",
+            "HTML",
+            "SCSS",
+            "Visual Studio Code",
+            "React",
+            "Redux",
+            "React Router"
+          ],
+          "environment": [
+            "Nginx",
+            "Azure",
+            "Azure SQL",
+            "Azure App Service (Docker container), Docker Container"
+          ],
+          "devops": [
+            "Bitbucket (Git)",
+            "Docker hub",
+            "Docker Container",
+            "WSL 2",
+            "Docker Compose (för utveckling)"
+          ]
+        }
+      },
+      {
+        "title": "Kone (in-house Spree)",
+        "icon": "/KONE.svg",
+        "period": {
+          "from": "2018-03-01T00:00:00Z",
+          "to": "2020-02-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare/Arkitekt",
+        "location": "Stockholm",
+        "description": "Kone behövde ett verktyg för att stödja verksamheten från sälj till en färdig hiss. Jag hjälpte Kone att vidareutveckla verktyget SET (Sales and Engineering Tool). Syftet med systemet är att förenkla och vägleda olika roller i Kone genom processen från sälj till ett bygge av en hiss. Kraven var inte spikade utan togs fram under utveckling med mig och kunden tillsammans och släpptes löpande. Min roll var att utveckla systemet och att leda ett team på 3 utvecklare där jag planerade sprintar med en UX/ Projektledare med täta releaser på ca 2 - 4 veckor. Jag avlastade utvecklarna från DevOps bitarna så utvecklarna kunde fokusera på utveckling. Tex så tog Jag fram script för utvecklarna så manuellt processer skulle automatiseras. Jag och projektledaren hade tillsammans möte med kund regelbundet för att samla in krav från kunden inför varje release. Jag gav också förslag på funktioner till Kone och många av förslagen implementerades och uppskattades av Kone. Jag introducerade CI/CD för teamet för att förbättra kvalitén av nya versions släpp. Jag hjälpte även utvecklarna genom att göra skisser på arkitekturen så utvecklarna enklare kunde utveckla nya funktioner. SET används idag av Kone Sverige och Kone Norge och Kone är så pass nöjda att det även Danmark står på tur att få använda systemet.",
+        "tech": {
+          "server": [
+            "ASP.NET 4.7",
+            "ASP.NET Core",
+            "ASP.NET Web API",
+            "ASP.NET Core MVC",
+            "Entity Framework",
+            "SQL",
+            "LINQ",
+            "Autofac",
+            "NuGet",
+            "REST API"
+          ],
+          "client": [
+            "TypeScript",
+            "Angular",
+            "Material Design",
+            "Flex Layout",
+            "NPM",
+            "HTML",
+            "SCSS",
+            "Visual Studio Code",
+            "E2E test Protractor",
+            "Jasmin"
+          ],
+          "environment": [
+            "Azure",
+            "Azure SQL",
+            "Azure App Service",
+            "Azure Logic Apps",
+            "Azure Search",
+            "Azure AD",
+            "Azure Storage",
+            "Visual Studio 2019"
+          ],
+          "devops": [
+            "AppVeyor",
+            "Bitbucket (Git)",
+            "PowerShell (deploy, DevOps)",
+            "Angular CLI (Webpack)"
+          ]
+        }
+      },
+      {
+        "title": "Symbrio (Konsult via Spree)",
+        "icon": "/symbrio.svg",
+        "period": {
+          "from": "2016-11-01T00:00:00Z",
+          "to": "2018-03-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare",
+        "location": "Stockholm",
+        "description": "Symbrio är ett företag som utvecklar faktureringssystem för byggbranschen. Både företag som är inköpare och återförsäljare/leverantörer är kunder hos Symbrio och använder systemet. Min roll var att gå in som frontend konsult för att lyfta Symbrios användargränssnit. Lyftet gjordes med teknisk hjälp av Angular och konfigurering av CI/CD för Angular i Jenkins. Jag jobbade tätt med andra backendutvecklare och en grafiskdesigner för att knyta ihop den nya designen och flödet med backend. Jag spred även kunskap om Angular inom teamet. Jag och den grafiska designern hade tät dialog om möjligheterna och jag kom med förslag på förbättringar i gränssnittet. Teamet jag jobbade med bestod av 7 utvecklare, 1 designer och 2 testare. Teamet delades upp efter krav/funktioner och då beroende på krav så kunde jag jobba med 1 - 2 utvecklare och 1 testare. Jag hade även en workshop med Symbrios utvecklare där vi byggde en varningslampa när något byggsteg i Jenkins misslyckades. Vi använde sig av NodeMCU som styrde relän. Den lilla workshopen uppskattades verkligen av Symbrios utvecklare.",
+        "tech": {
+          "server": [
+            "C#",
+            "Web API ASP.NET",
+            "WebSockets",
+            "NHibernate",
+            "SQL"
+          ],
+          "client": [
+            "TypeScript",
+            "JavaScript",
+            "Angular",
+            "AngularJS (fasades ut)",
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "LESS",
+            "Webforms (fasades ut mot angular)"
+          ],
+          "environment": [
+            "IIS",
+            "Windows Server 2012",
+            "SQL Server 2012",
+            "Visual Studio 2017",
+            "Visual Studio Code",
+            "TFS",
+            "NPM"
+          ],
+          "devops": ["Jenkins", "TFS", "Angular CLI", "Webpack"]
+        }
+      },
+      {
+        "title": "Logivia/Visma (Konsult via Spree)",
+        "icon": "/visma.svg",
+        "period": {
+          "from": "2015-09-01T00:00:00Z",
+          "to": "2016-11-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare",
+        "location": "Stockholm",
+        "description": "Logivia är ett IT bolag som utvecklar logistiksystem och har ett samarbete med Visma. Systemet hanterar beställningar av transporter och med hjälp av systemet ska kunden snabba upp sin planering av transporter. Systemet kan planera och optimera körningar/hämtningar och även visa dessa i realtid och varna om något går snett. Teamet jag jobbade med bestod av 4 utvecklare, 1 testare och en projektledare. Jag fick utveckla flera olika delar av systemet i hela stacken från databas till HTML och JavaScript där jag även fick ta fram komponenter för användargränssnittet. Jag var stöd speciellt för frontendutvecklingen där jag delade med mig av kunskap till det andra. Eftersom design eller flöde inte fanns tog jag fram förslag som jag själv implementerade.",
+        "tech": {
+          "server": [
+            "MVC 5 .NET C#",
+            "Entity Framework 6",
+            "WCF",
+            "Web Services"
+          ],
+          "client": [
+            "JavaScript",
+            "Knockout.js",
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "LESS"
+          ],
+          "environment": [
+            "IIS",
+            "Windows Server 2012",
+            "SQL server 2012",
+            "Visual Studio 2013",
+            "TFS"
+          ]
+        }
+      },
+      {
+        "title": "Klustr (inhouse projekt Spree)",
+        "icon": null,
+        "period": {
+          "from": "2015-01-01T00:00:00Z",
+          "to": "2015-08-01T00:00:00Z"
+        },
+        "role": "Backendutvecklare",
+        "location": "Stockholm",
+        "description": "Min roll i projektet var att driva och planera beckendutveckling. Backend bestod av ett REST API som Klustr appen (iOS och Android) kommunicerade med. Eftersom jag var den enda backendutvecklare tog jag mycket ansvar och planerade sitt arbete tillsammans med de andra två apputvecklarna. Teamet bestod i 2 apputvecklare, 1 testare och tillsammans med mig som backendutvecklare tog vi fram Klustr appen. Backend bestod också av Cloud Service som körde uppdatering av användarnas data och kommunicerade via Service Bus till Azure App Service. Jag valde denna uppdelning så tunga körningar skulle köras i Cloud Service för att lasta av Azure App Service som endast skulle hantera API anrop. Jag tog fram delar av den arkitekturen.",
+        "tech": {
+          "server": ["Web API 2 .NET", "C#", "OAuth", "Entity Framework 6"],
+          "client": [],
+          "environment": [
+            "Visual Studio 2015",
+            "Azure Web app",
+            "Azure Cloud Service",
+            "Azure Service Bus",
+            "Azure Storage",
+            "Azure SQL Server",
+            "MSTest"
+          ],
+          "devops": ["SVN", "TeamCity"]
+        }
+      },
+      {
+        "title": "Flygstolar.se/ATE (inhouse på M-Bition)",
+        "icon": "/flygstolar.png",
+        "period": {
+          "from": "2014-01-01T00:00:00Z",
+          "to": "2014-12-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare",
+        "location": "Stockholm",
+        "description": "När jag jobbade på M-bition som ägde tjänsten ATE och flygstolar.se så jobbade jag med att vidareutveckla ATE som är en prisjämförelsemotor för flygresor och hotell. ATE var alltså en SaaS-tjänst som användes av andra sajter. ATE hämtar in priser från flera resebyråer och sammanställer data för att sedan kunna presenteras av en resesajt som använder ATE. Användare kan då söka efter det billigaste flyg eller hotellpriset från den resebyrå kunden föredrar. Min roll var att vidareutveckla tjänsten med hotellsök och lägga in nya resebyråer i prisjämförelsemotorn. Jag gjorde även förbättringar i arkitekturen för att enklare kunna lägga in fler resebyråer.",
+        "tech": {
+          "server": [
+            "MVC 3 .NET",
+            "C#",
+            "Web Forms",
+            "WCF",
+            "Web Services",
+            "ETL"
+          ],
+          "client": ["JavaScript", "CSS", "Knockout.js", "Bootstrap", "HTML"],
+          "environment": [
+            "IIS",
+            "Windows Server 2008",
+            "Windows Server 2012",
+            "SQL Server 2008",
+            "Visual Studio 2012",
+            "SVN"
+          ],
+          "devops": []
+        }
+      },
+      {
+        "title": "Tele2 (Konsult via M-Bition)",
+        "icon": "/Tele2_logo.svg",
+        "period": {
+          "from": "2011-12-01T00:00:00Z",
+          "to": "2014-01-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare",
+        "location": "Stockholm",
+        "description": "Jag arbetade i ett SCRUM team med cirka 20 personer uppdelade i front och backend team. Min uppgift var att stödja frontend teamet med att utveckla och underhålla webbutiken skriven i C# med ASP.NET Web Forms. TeamCity användes för att bygga, deploya och köra tester för frontend. Jag jobbade tätt med marknadsavdelning där jag tog eget ansvar och kommunicerade tydligt med marknad så resultat blev som förväntat. Jag jobbade också med konfiguration av olika typer av servrar och utbildade kollegor hur man konfigurerar dessa. Jag gav förslag att byta ut jQuery mot AngularJS för att förenkla utveckling av gränssnittet och öka på möjligheterna vilket gjordes med gott resultat.",
+        "tech": {
+          "server": ["ASP .NET", "C#", "OpenText CMS"],
+          "client": ["JavaScript", "HTML", "CSS", "jQuery", "AngularJS"],
+          "environment": [
+            "IIS",
+            "Linux",
+            "SVN",
+            "Git",
+            "Windows Server",
+            "Visual Studio 2010",
+            "TeamCity",
+            "REHL",
+            "Apache HTTP Server",
+            "Memcached",
+            "PHP",
+            "MySQL",
+            "Magento"
+          ],
+          "devops": []
+        }
+      },
+      {
+        "title": "Bahnhof (Konsult via Netlight)",
+        "icon": "/bahnhof.svg",
+        "period": {
+          "from": "2011-06-01T00:00:00Z",
+          "to": "2011-12-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare",
+        "location": "Stockholm",
+        "description": "Jag jobbade med att bygga ut Bahnhofs administration system för telefonväxlar. Min roll var att integrera mot SNPACs API så Bahnhofs administration system skulle kunna utföra porteringar enklare. Tyvärr blev jag inte klar med det uppdraget utan lämnade över den till en kollega som slutförde integrationen. Jag la grunden för integrationen och det var enkelt för kollegan att ta över och slutföra arbetet.",
+        "tech": {
+          "server": ["Java", "Ruby on Rails"],
+          "client": ["JavaScript", "CSS", "HTML"],
+          "environment": ["Linux", "SVN", "Git", "Vim", "RubyMine"],
+          "devops": []
+        }
+      },
+      {
+        "title": "SCM Ventures (Konsult via Netlight)",
+        "icon": "/blocket.svg",
+        "period": {
+          "from": "2011-04-01T00:00:00Z",
+          "to": "2011-06-01T00:00:00Z"
+        },
+        "role": "Frontendutvecklare",
+        "location": "Stockholm",
+        "description": "SCM Ventures är en del av blocket.se mot utländska marknaden.  Min roll var som webbutvecklare att utveckla HTML, CSS, JavaScript för ”feature phones” (äldre telefoner). Målet var att få ut en enkel version av blocket för indiska marknaden. Blocket visste inte vilka begräsningar som fanns i ”feature phones” vilket jag löste utmaningen genom att hitta statistik för de telefoner som var vanligast i Indien och att installera och dokumentera emulatorer för dessa. Detta arbete kunde blocket använda för att vidareutveckla i andra länder där dessa emulatorer behövdes. Jag jobbade självständigt i denna roll men kommunicerade med andra utvecklare inom SCM Ventures.",
+        "tech": {
+          "server": ["PHP", "Blocket Templating"],
+          "client": ["JavaScript", "CSS", "HTML"],
+          "environment": ["Linux", "Bazar versionshantering", "Vim"],
+          "devops": []
+        }
+      },
+      {
+        "title": "Media Norge Digital (Konsult via Netlight)",
+        "icon": "/schibsted-logo-vector-xs.png",
+        "period": {
+          "from": "2010-10-01T00:00:00Z",
+          "to": "2011-04-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare",
+        "location": "Oslo",
+        "description": "Jag bodde och konsultade i Oslo i ca 8 månader eftersom jag fått ett uppdrag på Media Norge digital. MNO är en del av Schibsteds Digital avdelningar där utvecklingen av Schibsteds tidningar i Norge drivs (aftenposten.no, bt.no, aftenbladet.no med flera). Min roll var att hjälpa till att utveckla nya versioner av dessa sajter. Teamet jag jobbade i insåg att genom att utveckla ett gemensamt frontend ramverk för alla tidningar så skulle man spara mycket tid. Jag var med och tog fram ramverket tillsammans med MNOs utvecklare. bt.no lanserade först med ramverket för att sedan fortsätta med Aftenposten och Aftenbladet. Ramverket som utvecklades gjorde det mycket enklare för resterande tidningar att gå över till nya CMS:et Escenic. Jag jobbade enligt SCRUM med 3 frontend utvecklare och 5 andra backendutvecklare.",
+        "tech": {
+          "server": ["JSP", "Escenic"],
+          "client": ["JavaScript", "HTML", "CSS", "jQuery", "require.js"],
+          "environment": ["Linux Debian", "Tomcat", "Intellij IDE", "SVN"],
+          "devops": []
+        }
+      },
+      {
+        "title": "TELE2/COMVIQ (Konsult via Done Interactive)",
+        "icon": "/comviq.png",
+        "period": {
+          "from": "2009-10-01T00:00:00Z",
+          "to": "2010-10-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare",
+        "location": "Stockholm",
+        "description": "Jag jobbade som konsult på TELE2/COMVIQ där jag fick stödja COMVIQ team. Jags roll var att utveckla funktioner som marknadsavdelningen prioriterade.  T.ex. tanka kontantkortfunktion med integration till en betallösning för att förenkla för COMVIQ kunder att fylla på kontantkort via webben. Jag hoppade även in som extra stöd och hjälpte till med att utveckla TELE2 företagsshopen. Jag fick jobba i ett SCRUM team på 10 personer med daily standups och retros. Jag fick också ta fram backend och frontend arkitekturen för Comviqs nya sajt som skrevs i .NET och JavaScript.",
+        "tech": {
+          "server": ["ASP. NET", "C#", "Web Services", "LiveServer"],
+          "client": ["jQuery", "AJAX", "JavaScript", "JSON", "HTML", "CSS"],
+          "environment": [
+            "Linux",
+            "OpenText Reddot (CMS)",
+            "Windows Server 2008",
+            "IIS",
+            "Apache Tomcat (LiveServer)",
+            "Visual Studio 2010",
+            "SVN"
+          ],
+          "devops": []
+        }
+      },
+      {
+        "title": "Done Interactive",
+        "icon": null,
+        "period": {
+          "from": "2009-08-01T00:00:00Z",
+          "to": "2010-10-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare",
+        "location": "Stockholm",
+        "description": "Jag jobbade som fullstackutvecklare på Done Interactive. Jag jobbade med att utveckla kampanj och företagssajter och system åt kunder. Däribland kunder som Comviq, Blossa, Eurosport och andra kända varumärken. Kunderna jag jobbade med uppskattade min snabbhet och kommunikation.",
+        "tech": {
+          "server": ["ASP .NET", "C#", "SQL", "PHP", "Web Services"],
+          "client": ["jQuery", "AJAX", "JavaScript", "JSON", "HTML", "CSS"],
+          "environment": [
+            "IIS",
+            "Windows",
+            "Visual Studio 2008",
+            "SQL Server 2008",
+            "Adobe Photoshop",
+            "SVN"
+          ],
+          "devops": []
+        }
+      },
+      {
+        "title": "Fastcheck",
+        "icon": null,
+        "period": {
+          "from": "2008-04-01T00:00:00Z",
+          "to": "2009-08-01T00:00:00Z"
+        },
+        "role": "Fullstackutvecklare",
+        "location": "Stockholm",
+        "description": "Fastcheck är ett företag som tillhandahåller reseguider i PDF format för nedladdning. Min roll var att integrera partnersidor med fastchecks nedladdning system och utveckla den egna sajten. Jag tog även fram en ny integrationsmetod som gjorde det lättare för icke teknisk personal att på kort tid ta fram en ny integration åt partners så man snabbare kunde få spridning av reseguiderna.",
+        "tech": {
+          "server": [],
+          "client": [],
+          "environment": [],
+          "devops": []
+        }
+      },
+      {
+        "title": "Hewlett Packard (Praktik via Tongji University)",
+        "icon": "/hp-hewlett-packard.svg",
+        "period": {
+          "from": "2008-01-01T00:00:00Z",
+          "to": "2008-06-01T00:00:00Z"
+        },
+        "role": "Full stack developer",
+        "location": "Shanghai",
+        "description": "Jag bodde i Shanghai och praktiserade på HP i 5 månader via Tongji University där jag var utbytesstudent. Jag var med och utvecklade ett felrapporteringssystem som används internt då hårdvara gick sönder eller inte fungerade. Jag jobbade i team på 3 personer vilket betydde mycket eget ansvar. Jag drev även kurs i JavaScript för mina kollegor som ville lära sig mer om frontend utveckling. ",
+        "tech": {
+          "server": [],
+          "client": [],
+          "environment": [],
+          "devops": []
+        }
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": ".NET/.NET Core",
+      "level": 90
+    },
+    {
+      "name": "C#",
+      "level": 90
+    },
+    {
+      "name": "SQL",
+      "level": 70
+    },
+    {
+      "name": "JavaScript",
+      "level": 90
+    },
+    {
+      "name": "TypeScript",
+      "level": 90
+    },
+    {
+      "name": "React",
+      "level": 70
+    },
+    {
+      "name": "Linux",
+      "level": 60
+    },
+    {
+      "name": "Kubernetes",
+      "level": 60
+    },
+    {
+      "name": "Helm",
+      "level": 60
+    },
+    {
+      "name": "CI/CD",
+      "level": 80
+    },
+    {
+      "name": "Microservices",
+      "level": 80
+    },
+    {
+      "name": "Message brokers RabbitMQ, Service Bus, Kafka",
+      "level": 60
+    },
+    {
+      "name": "Azure",
+      "level": 70
+    },
+    {
+      "name": "Angular",
+      "level": 80
+    },
+    {
+      "name": "HTML,CSS, SASS",
+      "level": 70
+    },
+    {
+      "name": "Docker",
+      "level": 60
+    },
+    {
+      "name": "Cosmos DB",
+      "level": 70
+    }
+  ]
+}

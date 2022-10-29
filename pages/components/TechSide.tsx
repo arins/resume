@@ -4,8 +4,7 @@
 import React from "react";
 
 
-export default function TechSide({tech, techSide}: {tech:string[], techSide: string})
-{
+export default function TechSide({ tech, techSide }: { tech: string[], techSide: string }) {
     let counter = 0;
     return (
         <div key={techSide} className="mb-2 text-sm print:text-xs">
@@ -14,16 +13,16 @@ export default function TechSide({tech, techSide}: {tech:string[], techSide: str
                     {techSide}:
                 </div>
                 <div>
-                    {tech?.map(e=> {
+                    {tech?.map(e => {
                         const end = counter + 1 < tech.length ? ", " : ""
                         counter++;
                         return e.toString() + end;
-                    }  
+                    }
                     )}
                 </div>
             </div>
         </div>
-          
+
     );
 }
 
