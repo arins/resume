@@ -3,7 +3,7 @@
 
 import React from "react";
 import { PageContext } from "..";
-import { Cv, AboutMe } from "./../cv-data/cv";
+import { Cv, AboutMe } from "../../cv-data/cv";
 
 import Experience from "./Experience";
 

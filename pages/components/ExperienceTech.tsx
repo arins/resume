@@ -3,7 +3,7 @@
 
 import React from "react";
 import { PageContext } from "..";
-import { Tech } from "./../cv-data/cv";
+import { Tech } from "../../cv-data/cv";
 import TechSide from "./TechSide";
 
 

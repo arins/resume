@@ -2,7 +2,7 @@
 
 
 import React from "react";
-import { ExperienceEntry } from "./../cv-data/cv";
+import { ExperienceEntry } from "../../cv-data/cv";
 import ExperienceTech from "./ExperienceTech";
 
 const sv = new Intl.DateTimeFormat('sv-SE', { year: 'numeric', month: 'long' });

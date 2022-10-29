@@ -1,7 +1,7 @@
 
 import React from 'react';
-import cvData from "./../../cv-data/cv.json";
-import { Cv, ExperienceEntry } from "./../../cv-data/cv";
+import cvData from "../../../cv-data/cv.json";
+import { Cv, ExperienceEntry } from "../../../cv-data/cv";
 import Experience from '../../components/Experience';
 import { useRouter } from 'next/router';
 

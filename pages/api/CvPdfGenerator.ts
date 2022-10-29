@@ -1,8 +1,8 @@
 
 import html_to_pdf from 'html-pdf-node';
 import { merge } from 'merge-pdf-buffers';
-import * as CVdata from '../cv-data/cv.json'
-import { Cv } from '../cv-data/cv';
+import * as CVdata from '../../cv-data/cv.json'
+import { Cv } from '../../cv-data/cv';
 
 import { writeFile, readFile, access } from 'fs/promises';
 import { constants } from 'fs';

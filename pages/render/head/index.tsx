@@ -2,8 +2,8 @@
 
 
 import React from "react";
-import cvData from "./../../cv-data/cv.json";
-import { Cv } from "./../../cv-data/cv";
+import cvData from "../../../cv-data/cv.json";
+import { Cv } from "../../../cv-data/cv";
 import AboutMe from "../../components/AboutMe";
 import Head from "../../components/Head";
 import TechStack from "../../components/TechStack";

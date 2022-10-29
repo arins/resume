@@ -3,7 +3,7 @@
 
 import React from "react";
 import { PageContext } from "..";
-import { Cv, AboutMe as a } from "./../cv-data/cv";
+import { Cv, AboutMe as a } from "../../cv-data/cv";
 
 export default function AboutMe({ cv, lang }: { cv: Cv, lang?: string }) {
   return (<PageContext.Consumer>

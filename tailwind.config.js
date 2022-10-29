@@ -10,18 +10,14 @@ module.exports = {
     },
     extend: {
       spacing: {
-        '128': '32rem',
-        '144': '36rem',
+        'a1': '1.6rem'
+      },
+      fontSize:{
+        'xxs': '10px'
       }
     }
   },
   plugins: [],
   safelist:[
-    "print:pb-28",
-    "print:pb-32",
-    "print:pb-36",
-    "print:pb-56",
-    "print:pb-72",
-    "print:pb-128"
   ]
 }

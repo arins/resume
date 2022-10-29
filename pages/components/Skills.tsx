@@ -2,7 +2,7 @@
 
 
 import React from "react";
-import { Cv } from "./../cv-data/cv";
+import { Cv } from "../../cv-data/cv";
 import SkillMeter from "./SkillMeter";
 
 export default function Skills({ cv }: { cv: Cv }) {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Cv } from "./../cv-data/cv";
+import { Cv } from "../../cv-data/cv";
 import Line from "./Line";
 
 function calculateAge(birthday: Date) {

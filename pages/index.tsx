@@ -4,8 +4,8 @@ import AboutMe from './components/AboutMe'
 import Head from './components/Head'
 import Line from './components/Line'
 import Skills from './components/Skills'
-import cvData from "./cv-data/cv.json";
-import { Cv } from "./cv-data/cv";
+import cvData from "../cv-data/cv.json";
+import { Cv } from "../cv-data/cv";
 import Experiences from './components/Experiences'
 import TechStack from './components/TechStack'
 import React from 'react';
@@ -34,34 +34,60 @@ export default function Home({ cv }: { cv: Cv }) {
 
         </div>
         <TechStack></TechStack>
-        <div className="flex flex-col md:flex-row pt-20 p-4 md:p-10 pb-20 flex-wrap overflow-hidden print:pr-10 print:pl-10">
+        <div className='flex flex-row items-stretch'>
+          <div className="flex flex-col md:w-10/12 lg:w-11/12 print:w-full w-full">
+            
+            <div className="flex flex-col md:flex-row pt-20 p-4 md:p-10 pb-20 flex-wrap overflow-hidden print:pr-10 print:pl-10">
 
-          <AboutMe cv={cv}></AboutMe>
+              <AboutMe cv={cv}></AboutMe>
 
-        </div>
-        <div className="flex flex-col p-4 md:p-10 overflow-hidden">
-          <div data-aos="fade-left">
-            <h2 className="text-2xl font-bold mb-10 print:pr-10 print:pl-10">
-              {settings.lang == "sv" ? "Erfarenhet" : "Experience"}
-            </h2>
+            </div>
+            <div className="flex flex-col p-4 md:p-10 overflow-hidden">
+              <div data-aos="fade-left">
+                <h2 className="text-2xl font-bold mb-10 print:pr-10 print:pl-10">
+                  {settings.lang == "sv" ? "Erfarenhet" : "Experience"}
+                </h2>
+              </div>
+              <div className="flex flex-row flex-wrap print:pr-10 print:pl-10">
+                <Experiences cv={cv}></Experiences>
+
+              </div>
+            </div>
+            <Line></Line>
+            <div className="flex flex-col p-4 md:p-10">
+              <h2 className="text-2xl font-bold mb-4">
+                {settings.lang == "sv" ? "Kompetens" : "Skills"}
+              </h2>
+
+              <div className="flex flex-row flex-wrap">
+                <Skills cv={cv}></Skills>
+
+              </div>
+            </div>
           </div>
-          <div className="flex flex-row flex-wrap print:pr-10 print:pl-10">
-            <Experiences cv={cv}></Experiences>
+          <div className='hidden md:w-2/12 lg:w-1/12 print:hidden md:flex items-start justify-around border-l-2 border-gray-200 mt-20' >
+            <div className='sticky top-2 self-start' data-aos-anchor="#fullname" data-aos="fade-down-right" data-aos-offset="800" >
 
+              <div className="flex flex-row justify-center pb-2"  >
+                <div className="flex align-middle p-2 rounded-full bg-gray-200 w-16 h-16 md:w-18 md:h-18 ">
+                  <img src="/arin.jpg" className="flex rounded-full w-14 md:w-16 "></img>
+                </div>
+
+              </div>
+              <div className='flex flex-row justify-center pb-4'>
+                <div className='text-xxs lg:text-xs font-bold'>Arin Sinabian</div>
+              </div>
+              <div className='flex flex-row justify-center'>
+                <a target="blank" href={`/api/pdf?lang=${settings.lang}`} className="pr-4">
+                  <img className="w-a1" src="/pdf.svg"></img>
+                </a>
+                <a target="blank" href="https://www.linkedin.com/in/arinsin/">
+                  <img className="w-8" src="/linkedin.svg"></img>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <Line></Line>
-        <div className="flex flex-col p-4 md:p-10">
-          <h2 className="text-2xl font-bold mb-4">
-            {settings.lang == "sv" ? "Kompetens" : "Skills"}
-          </h2>
-
-          <div className="flex flex-row flex-wrap">
-            <Skills cv={cv}></Skills>
-
-          </div>
-        </div>
-
       </div>
     </PageContext.Provider>
   )
