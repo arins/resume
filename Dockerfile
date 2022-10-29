@@ -4,6 +4,11 @@ FROM node:16-alpine
 WORKDIR /app
 COPY . .
 
+ENV PYTHONUNBUFFERED=1
+RUN apk add --update --no-cache python3 make g++  && ln -sf python3 /usr/bin/python
+RUN python3 -m ensurepip
+RUN pip3 install --no-cache --upgrade pip setuptools
+
 RUN npm install
 RUN npm run build
 
