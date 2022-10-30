@@ -8,6 +8,9 @@ const sv = new Intl.DateTimeFormat('sv-SE', { year: 'numeric', month: 'long' });
 
 export default function Education({ education }: { education: EducationData }) {
     
+    if(!education){
+        return <></>;
+    }
     var from = education?.from ? new Date(education?.from) : null;
 
     var to = education?.to ? new Date(education?.to) : null;

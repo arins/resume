@@ -9,7 +9,7 @@ import Education from "./Education";
 export default function Educations({ educations }: { educations: EducationData[] }) {
     return (
         <div>
-            {educations.map(e => <Education key={e.educationName} education={e}></Education>)}
+            {educations?.map(e => <Education key={e.educationName} education={e}></Education>)}
         </div>
     );
 }

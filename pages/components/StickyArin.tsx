@@ -5,6 +5,9 @@ import React from "react";
 
 export default function StickyArin({ settings }: { settings: {lang: string, darkMode: boolean} }) {
 
+  if(!settings){
+    return <></>;
+  }
   return (
     <div className='sticky top-2 self-start' data-aos-anchor="#fullname" data-aos="fade-down-right" data-aos-offset="800">
         <div className="flex flex-row justify-center pb-2"  >
