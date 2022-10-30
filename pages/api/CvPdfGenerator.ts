@@ -80,7 +80,7 @@ class CvPdfGenerator {
         await this.GenerateExperiences(cv, lang, options, buffers);
 
         await this.GenerateSkillMeter(lang, options, buffers);
-        //await this.GenerateEducation(lang, options, buffers);
+        await this.GenerateEducation(lang, options, buffers);
 
         const mergeBuffer = await merge(buffers);
         return mergeBuffer;
@@ -88,7 +88,7 @@ class CvPdfGenerator {
 
     private async GenerateEducation(lang: string, options: any, buffers: Buffer[]): Promise<Buffer[]> {
         const file = { url: `${this.baseUrl}/render/educations?lang=${lang}` };
-
+        
         const skillBuffer = await html_to_pdf.generatePdf(file, options);
         buffers.push(skillBuffer);
         return buffers;
@@ -104,8 +104,10 @@ class CvPdfGenerator {
     }
 
     private async GenerateHead(lang: string, options: any, buffers: Buffer[]): Promise<Buffer[]> {
-        const file = { url: `${this.baseUrl}/render/head?lang=${lang}` };
 
+        
+        const file = { url: `${this.baseUrl}/render/head?lang=${lang}` };
+        console.log(file.url);
         const headBuffer = await html_to_pdf.generatePdf(file, options);
         buffers.push(headBuffer);
         return buffers;
