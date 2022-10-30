@@ -9,7 +9,7 @@ import Experiences from './components/Experiences'
 import TechStack from './components/TechStack'
 import React from 'react';
 import StickyArin from './components/StickyArin';
-import Educations from './components/educations';
+import Educations from './components/Educations';
 
 
 

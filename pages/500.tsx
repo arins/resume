@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { Cv } from '../cv-data/cv';
 import cvData from '../cv-data/cv.json';
@@ -15,7 +16,7 @@ export default function Custom500({cv}: {cv:Cv}) {
                 
             </div>
             <div className='flex flex-row justify-center'>
-                <p><a className='underline text-2xl' href="/">Till startsidan</a></p>
+                <p><Link className='underline text-2xl' href="/">Till startsidan</Link></p>
             </div>
         </div>
         );
