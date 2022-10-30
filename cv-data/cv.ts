@@ -7,8 +7,9 @@ export interface Cv {
     sv: AboutMe,
     skills: Skill[];
     pdfLayout: number[][];
-
+    education: Education[];
 }
+
 
 export interface AboutMe {
 
@@ -44,4 +45,13 @@ export interface Tech {
     client: string[];
     devops: string[];
     environment: string[];
+}
+
+
+export interface Education{
+    educationName: string;
+    schoolName: string;
+    city: string;
+    from: string;
+    to: string;
 }

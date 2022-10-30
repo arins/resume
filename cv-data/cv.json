@@ -1182,7 +1182,7 @@
         "icon": "/hp-hewlett-packard.svg",
         "period": {
           "from": "2008-01-01T00:00:00Z",
-          "to": "2008-06-01T00:00:00Z"
+          "to": "2008-04-01T00:00:00Z"
         },
         "role": "Full stack developer",
         "location": "Shanghai",
@@ -1265,5 +1265,44 @@
       "name": "Cosmos DB",
       "level": 70
     }
+  ],
+  "education": [
+    {
+      "educationName":"Computer Science",
+       "schoolName": "Tongji University",
+       "city": "Shanghai",
+      "from": "2008-06-02T00:00:00Z",
+      "to": "2009-04-02T00:00:00Z"
+    },
+    {
+      "educationName": "Datavetenskapliga programmet",
+      "schoolName": "Uppsala Universitet",
+      "city": "Uppsala",
+      "from": "2005-09-02T00:00:00Z",
+      "to": "2008-06-02T00:00:00Z"
+    },
+    {
+      "educationName": "Naturvetenskapliga programmet",
+      "schoolName": "Uppsala Universitet",
+      "city": "Uppsala",
+      "from": "2004-09-02T00:00:00Z",
+      "to": "2005-06-02T00:00:00Z"
+    },
+    {
+      "educationName": "Radiolänkman",
+      "schoolName": "Försvaret S1",
+      "city": "Enköping",
+      "from": "2003-09-02T00:00:00Z",
+      "to": "2004-04-02T00:00:00Z"
+    },
+    {
+      "educationName": "Teknikprogrammet",
+      "schoolName": "Fyrisskolan",
+      "city": "Uppsala",
+      "from": "2000-09-02T00:00:00Z",
+      "to": "2003-06-02T00:00:00Z"
+    }  
   ]
+  
 }
+
