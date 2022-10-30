@@ -80,7 +80,7 @@ class CvPdfGenerator {
         await this.GenerateExperiences(cv, lang, options, buffers);
 
         await this.GenerateSkillMeter(lang, options, buffers);
-        await this.GenerateEducation(lang, options, buffers);
+        //await this.GenerateEducation(lang, options, buffers);
 
         const mergeBuffer = await merge(buffers);
         return mergeBuffer;
