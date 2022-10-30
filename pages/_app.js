@@ -2,6 +2,8 @@ import '../styles/globals.css'
 
 import { useEffect } from 'react';
 import AOS from 'aos';
+import cvData from './../cv-data/cv.json'
+import Cv from './../cv-data/cv'
 
 import "aos/dist/aos.css";
 import Head from 'next/head'
@@ -37,9 +39,11 @@ function MyApp({ Component, pageProps }) {
  
   return <>
     <Head>
-      <title>Arin Sinabian</title>
+      <title>CV Arin Sinabian</title>
       <link rel="apple-touch-icon" href="apple-touch-icon.png"></link>
       <link rel="manifest" href="manifest.json" />
+      <meta name="description" lang="sv" content={cvData.sv.aboutMe}></meta>
+      <meta name="description" lang="en" content={cvData.en.aboutMe}></meta>
     </Head>
     <Component {...pageProps} />
   </>

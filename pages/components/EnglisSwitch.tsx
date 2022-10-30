@@ -40,7 +40,7 @@ export default function EnglishSwitch() {
       setEnglish();
 
     }
-    else {
+    else if(langQuery === "sv") {
       setSwedish();
     }
 
