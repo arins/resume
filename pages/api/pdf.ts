@@ -11,10 +11,20 @@ import Generator from './CvPdfGenerator';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 
 
-
+  
+  
   const lang = req.query.lang?.toString() || 'sv';
   const forceRerender = req.query.force === 'true';
   if (!(lang == 'en' || lang == 'sv')) {
+    res.status(400);
+    return;
+  }
+  try
+  {
+    Generator.SetPort(parseInt(req.headers.host.split(":")[1]));
+  }
+  catch(e)
+  {
     res.status(400);
     return;
   }

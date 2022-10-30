@@ -14,15 +14,21 @@ class CvPdfGenerator {
     /**
      *
      */
-
+    private port: number = 3001;
     private fileLocation = `./tmp/`;
     private englishCvFilename = 'cv-en.pdf';
     private swedishCvFilename = 'cv-sv.pdf';
-    private baseUrl = "http://localhost:3001";
+    private get baseUrl(): string{
+        return `http://localhost:${this.port}`;
+    } 
 
     constructor() {
+        
 
+    }
 
+    public SetPort(port:number):void{
+        this.port = port;
     }
 
     public GetFilenameForLang(lang: string) {
