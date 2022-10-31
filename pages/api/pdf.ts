@@ -22,12 +22,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try
   {
     const portStr = req.headers.host.split(":")[1]
-    console.error("port:" + portStr);
+    console.log("port:" + portStr);
     Generator.SetPort(parseInt(req.headers.host.split(":")[1]));
   }
   catch(e)
   {
-    console.error(e);
+    console.log(e);
     res.status(400);
     return;
   }
