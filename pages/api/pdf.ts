@@ -21,10 +21,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
   try
   {
+    const portStr = req.headers.host.split(":")[1]
+    console.log(portStr);
     Generator.SetPort(parseInt(req.headers.host.split(":")[1]));
   }
   catch(e)
   {
+    console.error(e);
     res.status(400);
     return;
   }

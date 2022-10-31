@@ -74,7 +74,7 @@ class CvPdfGenerator {
         const cv: Cv = CVdata as any;
         const buffers: Buffer[] = [];
         let options = { format: 'A4', margin: { top: 0, bottom: 0, left: 0, right: 0 }, preferCSSPageSize: false };
-
+        
         await this.GenerateHead(lang, options, buffers);
 
         await this.GenerateExperiences(cv, lang, options, buffers);
@@ -107,7 +107,7 @@ class CvPdfGenerator {
 
         
         const file = { url: `${this.baseUrl}/render/head?lang=${lang}` };
-        console.log(file.url);
+        
         const headBuffer = await html_to_pdf.generatePdf(file, options);
         buffers.push(headBuffer);
         return buffers;
