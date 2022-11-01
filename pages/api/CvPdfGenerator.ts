@@ -14,7 +14,7 @@ class CvPdfGenerator {
     /**
      *
      */
-    private port: number = 3001;
+    private port: number = parseInt(process.env.PORT, 10);
     private fileLocation = `./tmp/`;
     private englishCvFilename = 'cv-en.pdf';
     private swedishCvFilename = 'cv-sv.pdf';

@@ -1,9 +1,11 @@
 version: "3.9"
 services:
   resume_arin:
-    image: resume:v1.3.8
+    image: resume:v1.3.9
     build: .
     container_name: resume_arin
+    environment:
+      - PORT=3001
     ports:
     - "3001:3001"
     restart: unless-stopped

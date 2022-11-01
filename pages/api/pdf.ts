@@ -19,18 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.status(400);
     return;
   }
-  try
-  {
-    const portStr = req.headers.host.split(":")[1]
-    console.log("port:" + portStr);
-    Generator.SetPort(parseInt(req.headers.host.split(":")[1]));
-  }
-  catch(e)
-  {
-    console.log(e);
-    res.status(400);
-    return;
-  }
+  console.log("test:", process.env.PORT);
   const buffer = await Generator.GetCvFileBuffer(lang, forceRerender)
   const filename = Generator.GetFilenameForLang(lang);
 
