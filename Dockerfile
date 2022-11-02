@@ -54,7 +54,7 @@ xdg-utils
 
 RUN npm install
 RUN npm run build
-
+RUN mkdir tmp
 EXPOSE 3001
 
 ENV PORT=3001
