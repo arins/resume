@@ -1206,15 +1206,35 @@
       "level": 90
     },
     {
-      "name": "SQL",
+      "name": "SQL, SQL Server, Azure SQL Server",
       "level": 70
     },
     {
-      "name": "JavaScript",
-      "level": 90
+      "name": "Cosmos DB",
+      "level": 70
     },
     {
-      "name": "TypeScript",
+      "name": "CI/CD (Azure DevOps, AppVeyor, Jenkins)",
+      "level": 80
+    },
+    {
+      "name": "Monitoring (Grafana, Prometheus, Loki, Alerts)",
+      "level": 50
+    },
+    {
+      "name": "Message brokers: RabbitMQ, Azure Service Bus, Kafka",
+      "level": 60
+    },
+    {
+      "name": "Kubernetes, Helm, Azure Kuberenetes, Docker",
+      "level": 70
+    },
+    {
+      "name": "Microservice Architecture",
+      "level": 70
+    },
+    {
+      "name": "JavaScript/TypeScript",
       "level": 90
     },
     {
@@ -1222,47 +1242,15 @@
       "level": 70
     },
     {
-      "name": "Linux",
-      "level": 60
-    },
-    {
-      "name": "Kubernetes",
-      "level": 60
-    },
-    {
-      "name": "Helm",
-      "level": 60
-    },
-    {
-      "name": "CI/CD",
+      "name": "Angular",
       "level": 80
-    },
-    {
-      "name": "Microservices",
-      "level": 80
-    },
-    {
-      "name": "Message brokers RabbitMQ, Service Bus, Kafka",
-      "level": 60
     },
     {
       "name": "Azure",
       "level": 70
     },
     {
-      "name": "Angular",
-      "level": 80
-    },
-    {
       "name": "HTML,CSS, SASS",
-      "level": 70
-    },
-    {
-      "name": "Docker",
-      "level": 60
-    },
-    {
-      "name": "Cosmos DB",
       "level": 70
     }
   ],
