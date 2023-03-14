@@ -21,7 +21,7 @@ export default function Experiences({ cv }: { cv: Cv }) {
 
                     <div >
                         {lang?.experince?.map(e =>
-                            <Experience key={e.title} counter={counter++} experience={e}></Experience>
+                            <Experience key={e.title} counter={counter++} experience={e} lang={settings.settings.lang}></Experience>
                         )}
                     </div>
 

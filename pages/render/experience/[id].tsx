@@ -5,7 +5,7 @@ import { Cv, ExperienceEntry } from "../../../cv-data/cv";
 import Experience from '../../components/Experience';
 import { useRouter } from 'next/router';
 
-export default function ExperiencePage({ cv, lang }: { cv: Cv, lang: string }) {
+export default function ExperiencePage({ cv, lang }: { cv: Cv, lang?: string }) {
 
 
   const router = useRouter()
@@ -21,6 +21,7 @@ export default function ExperiencePage({ cv, lang }: { cv: Cv, lang: string }) {
   const expByLang = cv[lang?.toString() || 'sv'];
   const experience: ExperienceEntry[] = [];
   for (const index of itemsInPage) {
+    console.log(index);
     experience.push(expByLang.experince[index]);
   }
   const counter = 0;
@@ -31,7 +32,7 @@ export default function ExperiencePage({ cv, lang }: { cv: Cv, lang: string }) {
         {lang === 'sv' ? 'Erfarenhet' : 'Experience'}
       </h2> : null}
       {experience.map(r =>
-        <Experience key={counter} experience={r} counter={counter} ></Experience>
+        <Experience key={counter} experience={r} counter={counter} lang={lang?.toString() || 'sv'} ></Experience>
       )}
     </div>
 
@@ -39,9 +40,13 @@ export default function ExperiencePage({ cv, lang }: { cv: Cv, lang: string }) {
 }
 
 export async function getServerSideProps(context) {
+  let lang = 'sv';
+  if(!context.query.lang){
+    lang = context.query.lang;
+  }
   return {
     props: {
-      lang: context.query.lang,
+      lang: lang,
       cv: cvData as Cv,
     }, // will be passed to the page component as props
   }

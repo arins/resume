@@ -10,12 +10,55 @@
     [6, 7],
     [8, 9, 10],
     [11, 12, 13],
-    [14, 15, 16, 17]
+    [14, 15],
+    [16, 17, 18]
   ],
   "en": {
     "role": "Freelancing Full stack developer/Architect",
     "aboutMe": "I am a system architect with both backend and frontend experience. I started working as a developer in 2008 and have worked in different industries and in different countries. I am a creative developer who comes up with suggestions for functions and solutions myself. My strengths lie in my ability to communicate with other developers and customers/product owner and so on. I am very driven, analytical and positive. I am social and find it easy to make connections. I find it easy to learn new technology and methods for solving tasks. I think it's fun to spread my knowledge but also good at listening and taking in new knowledge.",
     "experince": [
+      {
+        "title": "Safeline",
+        "icon": "/safeline.png",
+        "period": {
+          "from": "2023-01-10T00:00:00Z",
+          "to": null
+        },
+        "role": "Backend developer/Architect",
+        "location": "Tyresö/Stockholm",
+        "description": "SafeLine develops and manufacturs elevator products such as elevator telephones, control systems and replacement products to repair elevators. SafeLine also develops systems to monitor elevators with their IoT products that can report the movement of the elevator, door openings and other events related to the elevator. My role at SafeLine as a backend developer is to continue building on Orion, which is the system that receives data from all their IoT products. The system architecture is built with Azure Eventhub which streams events to all microservices. The microservices in turn produce events that can be consumed by other microservices. Architecture is built so the services are very loosely coupled and makes it easy to release new versions of the microservices. I have contributed by simplifying the architecture with the parts I have worked with. I have also improved CI/CD processes for both backend and frontend. My daily work has been to communicate with product owner, frontend developers to develop good solutions.",
+        "tech": {
+          "server": [
+            "Microservices",
+            "C#",
+            "ASP.NET 6,7",
+            "MongoDB (Mongodb driver)",
+            "SQL (Postgres)",
+            "xUnit.NET",
+            "Swashbuckle (Swagger)",
+            "REST API"
+          ],
+          "client": [],
+          "environment": [
+            "Azure",
+            "Azure Cosmos DB (mongodb api)",
+            "Docker",
+            "Kubernetes",
+            "Azure K8s",
+            "Azure EventHub",
+            "Timescale (Postgres for timeseries)",
+            "Azure Service Bus"
+          ],
+          "devops": [
+            "Azure DevOps",
+            "Azure Container Registry",
+            "GIT",
+            "Azure Pipelines/Releases",
+            "Kubernetes",
+            "Velero (Backup)"
+          ]
+        }
+      },
       {
         "title": "Charge Amps",
         "icon": "/logo-charge-amps-large.png",
@@ -609,11 +652,53 @@
     "aboutMe": "Jag är systemarkitekt med både backend och frontend erfarenhet. Jag började jobba som utvecklare 2008 och har jobbat inom olika branscher och i olika länder. Jag är en kreativ utvecklare som själv kommer med förslag på funktioner och lösningar. Mina styrkor ligger i min förmåga att kommunicera med andra utvecklare och kunder/kravställare. Jag är mycket driven, analytisk och positivt lagd. Jag är social och har lätt för att knyta kontakter. Jag har lätt för att lära mig nya tekniker och metoder för att lösa uppgifter. Jag tycker att det är kul att sprida min kunskap men också bra på att lyssna och ta in ny kunskap.",
     "experince": [
       {
+        "title": "Safeline",
+        "icon": "/safeline.png",
+        "period": {
+          "from": "2023-01-10T00:00:00Z",
+          "to": null
+        },
+        "role": "Backendutvecklare/Arkitekt",
+        "location": "Tyresö/Stockholm",
+        "description": "SafeLine utvecklar och tillverkar hissprodukter så som hisstelefoner, styrsystem och ersättningsprodukter för reparation av hissar. SafeLine utvecklar också system för att övervaka hissar där deras IoT produkter kan rapportera hissens rörelse, dörröppningar och andra händelser som rör hissen. Min roll på SafeLine som backendutvecklare är att fortsätta bygga vidare på Orion som är systemet som tar emot data från alla deras IoT produkter. Systemet arkitektur är byggt med Azure Eventhub som strömmar event till alla mikrotjänster. Mikrotjänsterna i sin tur producerar events som kan konsumeras av andra mikrotjänster. Arkitektur är byggd så tjänsterna är väldigt löst kopplade och gör det enkelt att släppa nya versioner av mikrotjänsterna. Jag har bidragit med att förenkla arkitekturen med dom delar jag har jobbat med. Jag har också förbättrat CI/CD processer för både backend och frontend. Mitt dagliga arbete har varit att kommunicera med produktägare, frontend utvecklare för att ta fram bra lösningar.",
+        "tech": {
+          "server": [
+            "Microservices",
+            "C#",
+            "ASP.NET 6,7",
+            "MongoDB (Mongodb driver)",
+            "SQL (Postgres)",
+            "xUnit.NET",
+            "Swashbuckle (Swagger)",
+            "REST API"
+          ],
+          "client": [],
+          "environment": [
+            "Azure",
+            "Azure Cosmos DB (mongodb api)",
+            "Docker",
+            "Kubernetes",
+            "Azure K8s",
+            "Azure EventHub",
+            "Timescale (Postgres for timeseries)",
+            "Azure Service Bus"
+          ],
+          "devops": [
+            "Azure DevOps",
+            "Azure Container Registry",
+            "GIT",
+            "Azure Pipelines/Releases",
+            "Kubernetes",
+            "Velero (Backup)"
+          ]
+        }
+      },
+      {
         "title": "Charge Amps",
         "icon": "/logo-charge-amps-large.png",
         "period": {
           "from": "2022-02-01T00:00:00Z",
-          "to": null
+          "to": "2023-12-23T00:00:00Z"
         },
         "role": "Backendutvecklare",
         "location": "Stockholm",

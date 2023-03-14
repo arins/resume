@@ -7,7 +7,7 @@ import ExperienceTech from "./ExperienceTech";
 
 const sv = new Intl.DateTimeFormat('sv-SE', { year: 'numeric', month: 'long' });
 
-export default function Experience({ experience, counter }: { experience: ExperienceEntry, counter: number }) {
+export default function Experience({ experience, counter, lang }: { experience: ExperienceEntry, counter: number, lang: string }) {
     if (!experience) {
         return <></>
     }
@@ -31,7 +31,7 @@ export default function Experience({ experience, counter }: { experience: Experi
                         </div>
                         <div className="text-gray-500 text-xs">
                             {from ? sv.format(from).toUpperCase() + " - " : ""}
-                            {to ? sv.format(to).toUpperCase() : ((from && !to) ? "Fortsatt".toUpperCase() : "")}
+                            {to ? sv.format(to).toUpperCase() : ((from && !to) ? (lang == "sv" ? "Fortsatt" : "Ongoing").toUpperCase() : "")}
                         </div>
                     </div>
                 </h2>

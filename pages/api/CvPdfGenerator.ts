@@ -1,6 +1,10 @@
 
 import html_to_pdf from 'html-pdf-node';
-import { merge } from 'merge-pdf-buffers';
+
+
+import * as hummus from 'muhammara';
+
+import * as memoryStreams from 'memory-streams';
 import * as CVdata from '../../cv-data/cv.json'
 import { Cv } from '../../cv-data/cv';
 
@@ -72,56 +76,81 @@ class CvPdfGenerator {
 
     private async generatePdf(lang: string): Promise<Buffer> {
         const cv: Cv = CVdata as any;
-        const buffers: Buffer[] = [];
         let options = { format: 'A4', margin: { top: 0, bottom: 0, left: 0, right: 0 }, preferCSSPageSize: false };
         
-        await this.GenerateHead(lang, options, buffers);
+        let head = await this.GenerateHead(lang, options);
 
-        await this.GenerateExperiences(cv, lang, options, buffers);
+        let expericenes = await this.GenerateExperiences(cv, lang, options, head);
 
-        await this.GenerateSkillMeter(lang, options, buffers);
-        await this.GenerateEducation(lang, options, buffers);
-
-        const mergeBuffer = await merge(buffers);
-        return mergeBuffer;
+        let skillMeter = await this.GenerateSkillMeter(lang, options, expericenes);
+        let result = await this.GenerateEducation(lang, options, skillMeter);
+        return result;
     }
 
-    private async GenerateEducation(lang: string, options: any, buffers: Buffer[]): Promise<Buffer[]> {
+
+/**
+ * Concatenate two PDFs in Buffers
+ * @param {Buffer} firstBuffer 
+ * @param {Buffer} secondBuffer 
+ * @returns {Buffer} - a Buffer containing the concactenated PDFs
+ */
+private async combinePDFBuffers(firstBuffer, secondBuffer) {
+    var outStream = new memoryStreams.WritableStream();
+
+    try {
+        var firstPDFStream = new hummus.PDFRStreamForBuffer(firstBuffer);
+        var secondPDFStream = new hummus.PDFRStreamForBuffer(secondBuffer);
+
+        var pdfWriter = hummus.createWriterToModify(firstPDFStream, new hummus.PDFStreamForResponse(outStream));
+        pdfWriter.appendPDFPagesFromPDF(secondPDFStream);
+        pdfWriter.end();
+        var newBuffer = outStream.toBuffer();
+        outStream.end();
+
+        return newBuffer;
+    }
+    catch(e){
+        outStream.end();
+        throw new Error('Error during PDF combination: ' + e.message);
+    }
+};
+
+    private async GenerateEducation(lang: string, options: any, skillMeter: Buffer): Promise<Buffer> {
         const file = { url: `${this.baseUrl}/render/educations?lang=${lang}` };
         
-        const skillBuffer = await html_to_pdf.generatePdf(file, options);
-        buffers.push(skillBuffer);
-        return buffers;
+        const educations = await html_to_pdf.generatePdf(file, options);
+        return await this.combinePDFBuffers(skillMeter, educations);
     }
 
 
-    private async GenerateSkillMeter(lang: string, options: any, buffers: Buffer[]): Promise<Buffer[]> {
+    private async GenerateSkillMeter(lang: string, options: any, expericenes: Buffer): Promise<Buffer> {
         const file = { url: `${this.baseUrl}/render/skills?lang=${lang}` };
 
         const skillBuffer = await html_to_pdf.generatePdf(file, options);
-        buffers.push(skillBuffer);
-        return buffers;
+        
+        return await this.combinePDFBuffers(expericenes, skillBuffer);
+        
     }
 
-    private async GenerateHead(lang: string, options: any, buffers: Buffer[]): Promise<Buffer[]> {
+    private async GenerateHead(lang: string, options: any): Promise<Buffer> {
 
         
         const file = { url: `${this.baseUrl}/render/head?lang=${lang}` };
         
         const headBuffer = await html_to_pdf.generatePdf(file, options);
-        buffers.push(headBuffer);
-        return buffers;
+        
+        return headBuffer;
     }
 
-    private async GenerateExperiences(cv: Cv, lang: string, options: any, buffers: Buffer[]): Promise<Buffer[]> {
+    private async GenerateExperiences(cv: Cv, lang: string, options: any, head: Buffer): Promise<Buffer> {
         for (let i = 0; i < cv.pdfLayout.length; i++) {
             const file = { url: `${this.baseUrl}/render/experience/${i}?lang=${lang}` };
 
             const buffer = await html_to_pdf.generatePdf(file, options);
-            buffers.push(buffer);
+            head = await this.combinePDFBuffers(head, buffer)
             
         }
-        return buffers;
+        return head;
     }
 
     private async StoreCache(fullPath: string, bufferPdf: Buffer): Promise<boolean> {
