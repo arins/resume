@@ -4,6 +4,7 @@
 import React from "react";
 import { PageContext } from "..";
 import { Cv, AboutMe as a } from "../../cv-data/cv";
+import Line from "./Line";
 
 export default function AboutMe({ cv, lang }: { cv: Cv, lang?: string }) {
   return (<PageContext.Consumer>
@@ -17,11 +18,11 @@ export default function AboutMe({ cv, lang }: { cv: Cv, lang?: string }) {
         return (
 
           <div className="" data-aos="fade-left">
-            <h2 className="text-2xl font-bold pb-4">
+            <h2 className="text-2xl font-bold ">
               {choosenLang === "sv" ? "Profil" : "Profile"}
             </h2>
-
-            <p>
+            <Line></Line>
+            <p className="mt-4">
               {languageVersion?.aboutMe}
             </p>
           </div>

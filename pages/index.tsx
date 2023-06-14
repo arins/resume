@@ -10,6 +10,7 @@ import TechStack from './components/TechStack'
 import React from 'react';
 import StickyArin from './components/StickyArin';
 import Educations from './components/Educations';
+import Certication from './components/Certification';
 
 
 
@@ -44,11 +45,20 @@ export default function Home({ cv }: { cv: Cv }) {
               <AboutMe cv={cv}></AboutMe>
 
             </div>
+            <div className="flex flex-col md:flex-row pt-20 p-4 md:p-10 pb-20 flex-wrap overflow-hidden print:pr-10 print:pl-10">
+
+              <Certication cv={cv}></Certication>
+
+            </div>
             <div className="flex flex-col p-4 md:p-10 overflow-hidden">
               <div data-aos="fade-left">
-                <h2 className="text-2xl font-bold mb-10 print:pr-10 print:pl-10">
+                <h2 className="text-2xl font-bold ">
                   {settings.lang == "sv" ? "Erfarenhet" : "Experience"}
                 </h2>
+                <Line></Line>
+                <div className="mb-10 print:pr-10 print:pl-10">
+
+                </div>
               </div>
               <div className="flex flex-row flex-wrap print:pr-10 print:pl-10">
                 <Experiences cv={cv}></Experiences>
@@ -57,22 +67,24 @@ export default function Home({ cv }: { cv: Cv }) {
             </div>
             <Line></Line>
             <div className="flex flex-col p-4 md:p-10">
-              <h2 className="text-2xl font-bold mb-4">
+              <h2 className="text-2xl font-bold ">
                 {settings.lang == "sv" ? "Kompetens" : "Skills"}
               </h2>
-
+              <Line></Line>
+              <div className="mb-4"></div>
               <div className="flex flex-row flex-wrap">
                 <Skills cv={cv}></Skills>
-
+                
               </div>
 
             </div>
             <Line></Line>
             <div className="flex flex-col p-4 md:p-10">
-              <h2 className="text-2xl font-bold mb-4">
+              <h2 className="text-2xl font-bold">
                 {settings.lang == "sv" ? "Utbildning" : "Education"}
               </h2>
-              
+              <Line></Line>
+              <div className="mb-4"></div>
               <Educations educations={cv.education}></Educations>
               
               

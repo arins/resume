@@ -4,7 +4,7 @@ FROM debian:stable-slim
 WORKDIR /app
 COPY . .
 RUN apt-get update && apt-get install -y curl 
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 RUN apt-get update
 RUN apt install -y nodejs
 
