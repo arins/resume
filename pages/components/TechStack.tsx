@@ -51,10 +51,10 @@ export default function TechStack({ lang }: { lang?: string }) {
                                     <img className="w-16 print:w-10" src="/azure_cosmos_db_logo_freelogovectors.net_.png"></img>
                                 </Tooltip>
                                 <Tooltip title="Angular, Material Design, Angular Flex Layout">
-                                    <img className="w-16 print:w-10" src="/angular-icon.svg"></img>
+                                    <img className="w-16 print:w-10" src="/angular.svg"></img>
                                 </Tooltip>
                                 <Tooltip title="React, Redux, React Material UI">
-                                    <img className="w-16 print:w-10" src="/React-icon.svg"></img>
+                                    <img className="w-16 print:w-10" src="/react.svg" ></img>
                                 </Tooltip>
                                 <Tooltip title="Docker, docker-compose, docker images">
                                     <img className="w-16 print:w-10" src="/docker.svg"></img>
