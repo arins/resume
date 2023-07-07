@@ -90,8 +90,8 @@ export default function TechStack({ lang }: { lang?: string }) {
                                 <img className="w-16 print:w-10" src="/Typescript_logo_2020.svg"></img>
                                 <img className="w-16 print:w-10" src="/Unofficial_JavaScript_logo_2.svg"></img>
 
-                                <img className="w-16 print:w-10" src="/angular-icon.svg"></img>
-                                <img className="w-16 print:w-10" src="/React-icon.svg"></img>
+                                <img className="w-16 print:w-10" src="/angular.svg"></img>
+                                <img className="w-16 print:w-10" src="/React.svg"></img>
 
                             </div>
                             <div className="flex pt-10 justify-evenly items-center print:pb-2 print:pt-3" data-aos="fade-right">
