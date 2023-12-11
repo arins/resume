@@ -32,7 +32,7 @@ export default function TechStack({ lang }: { lang?: string }) {
                                 <Tooltip title="Microsoft Azure">
                                     <img className="w-16 print:w-10" src="/Microsoft_Azure.svg"></img>
                                 </Tooltip>
-                                <Tooltip title="Azure Kubernetes">
+                                <Tooltip title="Azure Kubernetes, Kubectl">
                                     <img className="w-16 print:w-10 h-16 print:h-10" src="/kubernetes-icon.svg"></img>
                                 </Tooltip>
                                 <Tooltip title="TypeScript">
@@ -43,6 +43,9 @@ export default function TechStack({ lang }: { lang?: string }) {
                                 </Tooltip>
                                 <Tooltip title="Azure SQL Server">
                                     <img className="w-16 print:w-10" src="/sql-database-generic.svg"></img>
+                                </Tooltip>
+                                <Tooltip title="Tailwindcss">
+                                    <img className="w-16 print:w-10" src="/tailwind.png"></img>
                                 </Tooltip>
                             </div>
 
@@ -92,6 +95,7 @@ export default function TechStack({ lang }: { lang?: string }) {
 
                                 <img className="w-16 print:w-10" src="/angular.svg"></img>
                                 <img className="w-16 print:w-10" src="/react.svg"></img>
+                                
 
                             </div>
                             <div className="flex pt-10 justify-evenly items-center print:pb-2 print:pt-3" data-aos="fade-right">
@@ -105,6 +109,7 @@ export default function TechStack({ lang }: { lang?: string }) {
                                 <img className="w-16 print:w-10 h-16 print:h-10" src="/apache_kafka-icon.svg"></img>
                                 <img className="w-16 print:w-10 h-16 print:h-10" src="/helmsh-icon.svg"></img>
                                 <img className="w-16 print:w-10 h-16 print:h-10" src="/Git-Icon-1788C.svg"></img>
+                                <img className="w-16 print:w-10" src="/tailwind.png"></img>
                             </div>
                         </div>
                     </>
